@@ -1,0 +1,14 @@
+Current bug issues:
+
+Right now, running both MATLAB and Python for Days 1-2/2-3.
+
+
+find_y and shrinkage should work right. However, z values rn aren't coming out properly
+z updates are slightly off. It checks the 10th z-update because the first one is
+all zeroes and works out for both. Start with z update function, fix it.
+
+Current prints are
+  Python:
+    line 54 sparse_port_admm.py, shrinkage function in supporting_funcs.py
+  MATLAB:
+    same funcs, but all in sparse_port_admm.m
