@@ -1,13 +1,15 @@
 import numpy as np
-from compute_PRM import compute_PRM, compute_from_csv
+# from compute_PRM import compute_PRM, compute_from_csv
 from sparse_port_admm import *
+from pandas import read_csv
 
 #Lazy updates Algorithm
 #PRM = Price relative matrix of dimensions num_days x num_stock (numpy array)
 #eta is the learning rate (value of 0.05 is good)
 #weight is each day's portfolio
 
-data =  np.transpose(compute_from_csv('nyse.csv')) #test PRM
+#Cleaning data, for tests only
+data =  np.transpose(read_csv('nyse.csv', sep=',',header=None).as_matrix()) #test PRM
 
 g = 0.0# Transaction cost
 r = 0.1 # Augmentation term
@@ -15,6 +17,7 @@ b= 2 # Weight on L2 norm
 
 
 def lazy_updates_admm(eta, alpha, PRM = data, gamma = g, rho = r, beta = b):
+    print ('===================================================')
     print ("Eta: %f, Alpha: %f, Gamma = %f, Rho = %f, Beta = %f" % (eta, alpha, gamma, rho, beta))
 
     #Initialize variables

@@ -3,6 +3,7 @@ data/MATLAB Code/nyse.csv.d
 data/.vs/port_sel_web/v14/.suo.i
 data/MATLAB Code/nyse.csv.i
 data/Papers/Online Lazy Updates for Portfolio Selection with Transaction Costs.pdf.d
+data/Python Code/lazy_updates_admm.py.i
 data/Papers/Capital Growth and the Mean-Variance Approach to Portfolio Selection.pdf.d
 data/Python Code/eg_Portfolio.py.i
 data/MATLAB Code/eg_Portfolio.m.i
@@ -11,8 +12,9 @@ data/Papers/Online Lazy Updates for Portfolio Selection with Transaction Costs.p
 data/Python Code/find_y.py.i
 data/Python Code/sparse_port_admm.py.i
 data/Python Code/spares_port_admm.py.i
-data/Python Code/nyse.csv.d
+data/Papers/Online Quadratically Constrained Convex Optimization with.pdf.d
 data/Python Code/__pycache__/supporting_funcs.cpython-35.pyc.i
+data/Papers/Online Quadratically Constrained Convex Optimization with.pdf.i
 data/MATLAB Code/nyse.mat.d
 data/Papers/Capital Growth Theory.pdf.i
 data/Papers/Online Learning and Online.pdf.i
@@ -22,9 +24,9 @@ data/Papers/Capital Growth Theory.pdf.d
 data/Papers/On-Line Portfolio Selection Using Multiplicative Updates.pdf.d
 data/Papers/Lazy Updates.pdf.d
 data/Python Code/__pycache__/compute_PRM.cpython-35.pyc.i
-data/Python Code/__pycache__/sparse_port_admm.cpython-35.pyc.i
-data/Papers/eg_Portfolio paper.pdf.d
+data/Python Code/nyse.csv.i
 data/Papers/Lazy Updates.pdf.i
+data/Papers/eg_Portfolio paper.pdf.d
 data/MATLAB Code/sparse_port_admm.m.i
 data/port_sel_web.pyproj.i
 data/Papers/Online Learning and Online.pdf.d
@@ -41,6 +43,6 @@ data/README.i
 data/Python Code/__pycache__/compute_PRM.cpython-34.pyc.i
 data/Papers/Online Portfolio Selection A Survey.pdf.d
 data/Python Code/compute_PRM.py.i
-data/Python Code/nyse.csv.i
+data/Python Code/__pycache__/sparse_port_admm.cpython-35.pyc.i
 data/Papers/Online Portfolio Selection A Survey.pdf.i
-data/Python Code/lazy_updates_admm.py.i
+data/Python Code/nyse.csv.d

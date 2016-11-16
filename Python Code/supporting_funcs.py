@@ -24,7 +24,7 @@ def find_y(v,z): #projection to simplex
 def shrinkage(x, kappa):
     #what is the point of this function???
 
-    print ('x is:', x, 'kappa is:', kappa)
+    # print ('x is:', x, 'kappa is:', kappa)
     z = np.maximum(0, x-kappa) - np.maximum (0, -x-kappa)
-    print ("shrinkage z: ", z)
+    # print ("shrinkage z: ", z)
     return z

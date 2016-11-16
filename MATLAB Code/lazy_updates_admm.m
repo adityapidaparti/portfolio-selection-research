@@ -15,7 +15,7 @@ beta = 2; % Weight on L2 norm
 
 for eta = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on log
   for alpha = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on L1 norm (bigger alpha aka trade less frequently)
-
+    fprintf('===================================================\n');
     fprintf('** eta = %d, alpha = %f, gamma = %f, rho = %f, beta = %f **\n', eta, alpha, gamma, rho, beta);
 
     % Init variables

@@ -32,6 +32,7 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
 
     #debugging
     count = 0
+    fin = -1
 
     for k in range(MAX_ITER):
         #iterating through 3 sub problems until convergence or max iterations
@@ -39,24 +40,31 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
         #W-update (portfolio update))
         w_temp = (eta/((rho+beta)*const))*x_t + w_t + (rho/(rho+beta))*z - (rho/(rho+beta))*u
         w = find_y(w_temp, 1) #projects onto a probablility distribution of size 1
-        # print (w)
 
         #Z-update
         #Similar to W-update
+
+        #Z-update in Python is off from MATLAB quantities ever so slightly,
+        #My guess right now is that it's due to floating point numbers
+        #However, considering how accurate the values are, I'm leaving this for now
         z_old = z
         threshold = gamma/rho
         # print ("w", w)
         z_temp = (w - w_t + u)
         # print("z_temp is: ", "threshold is: ", threshold)
         z = shrinkage(z_temp, threshold)
-        count += 1
-        if count == 10:
-            print (z)
-            raise Exception
+        # count += 1
+        # print (z)
+        # if count == 3:
+        #     raise Exception
 
         #U-update
         #Last step
         u += (w - w_t - z)
+        # count += 1
+        # print ("u: ", u)
+        # if count == 3:
+        #     raise Exception
 
         #Computing primal and dual residual
         #Stopping criteria/convergence
@@ -71,4 +79,7 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
 
         #Stopping criterion (close enough to optimum solution)
         if (r_norm < eps_pri and s_norm < eps_dual):
+            print ("---STOPPING  ON ITER %d---" % (k+1))
             return w
+
+    print ('---STOPPING ON ITER %d---' % fin)

@@ -1,1 +1,1 @@
-Supporting functions find_y and shrinkage working. W-update functioning properly. Code somewhat runs. Currently set to only run for 2 days
+W, Z, and U updates all work. Only remaining issue is number of iterations

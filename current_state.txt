@@ -2,13 +2,23 @@ Current bug issues:
 
 Right now, running both MATLAB and Python for Days 1-2/2-3.
 
+W-update:
+Weird things are happening. The w_temp values from MATLAB do NOT match the
+w_temp values from Python. Instead, the Python w_temp vectors match the
+w vectors from MATLAB, and the find_y function in Python appears to do nothing.
+This is still all within the floating point error range. Very confusing.
 
-find_y and shrinkage should work right. However, z values rn aren't coming out properly
-z updates are slightly off. It checks the 10th z-update because the first one is
-all zeroes and works out for both. Start with z update function, fix it.
+Z-update:
+Values are slightly off, but in the correct spot. Chalking it up to floating point
+errors currently.
+
+U-update:
+U-update working properly, once accounting for floating point errors
+
+Iterations:
+Not enough iterations through currently.
 
 Current prints are
   Python:
-    line 54 sparse_port_admm.py, shrinkage function in supporting_funcs.py
+
   MATLAB:
-    same funcs, but all in sparse_port_admm.m
