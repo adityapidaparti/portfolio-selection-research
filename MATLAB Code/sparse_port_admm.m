@@ -22,6 +22,9 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
   z = zeros(n,1);
   u = zeros(n,1);
   const = w_t'*x_t; %equal to sum of each weight multiplied by its price relative
+%   w_t
+%   x_t
+%   const
 
   %debugging
   count = 0;
@@ -31,6 +34,8 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
     %     W-update (portfolio update)
     w_temp = (eta/((rho+beta)*const))*x_t + w_t + (rho/(rho+beta))*z - (rho/(rho+beta))*u; %Inside of 1st step Algorithm 1
     [w] = find_y(w_temp,1); %projects onto a probability distribution of size 1
+    % fprintf('\nsparse w: ')
+    % [w]
 
 
 
@@ -80,7 +85,7 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
       break;
     end
   end % end k iteration
-  fprintf('---STOPPING ON ITER %f ---\n', fin);
+  % fprintf('---STOPPING ON ITER %f ---\n', fin);
 end % end function
 
 % projection to simplex

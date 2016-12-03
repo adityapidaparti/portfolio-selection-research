@@ -2,3 +2,10 @@ Collaborators:
 Nicholas Johnson
 Aditya Pidaparti
 Arindam Banerjee
+
+Instructions to run eg_Portfolio.m:
+
+The command to run [weight wealth] = eg_Portfolio(data,0.05);
+Eta is .05 by default (as specified above), and is a good option
+The command: wealth(end) will give you the wealth at the end of the
+investment period. nyse.mat is the NYSE dataset.

@@ -26,14 +26,23 @@ for eta = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on log
     % Portfolio for the first day
     weight(:, 1) = ones(num_stock,1) * (1/num_stock);
 
-    for t = 2:3
+    e = .1;
+    a = 0.000001;
+    for t = 2:num_days
       fprintf('Day: %d, Wealth: %d \n', t, wealth(t-1) );
 
       % ADMM
       w = sparse_port_admm(weight(:,t-1), x(:,t-1), eta, beta, alpha, rho);
-
       weight(:,t) = w;
       wealth(t,1) = wealth(t-1,1)*(weight(:,t)'*x(:,t))-gamma*abs(wealth(t-1,1))*norm(weight(:,t-1)-weight(:,t),1);
+      % if t == 1120
+      %     plot(wealth((1:t),1));
+      %     error('stop');
+      %end
+
     end
+    wealth(num_days,1)
+    error('stop')
+    
   end % end alpha
 end % end eta

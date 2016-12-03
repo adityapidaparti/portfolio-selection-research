@@ -29,6 +29,9 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
 
     #equal to the sum of each weight multiplied by its price relative
     const = np.dot(w_t, x_t)
+    # print ("w_t: ", w_t)
+    # print ('x_t: ', x_t)
+    # print ("const: ", const)
 
     #debugging
     count = 0
@@ -41,6 +44,7 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
         w_temp = (eta/((rho+beta)*const))*x_t + w_t + (rho/(rho+beta))*z - (rho/(rho+beta))*u
         w = find_y(w_temp, 1) #projects onto a probablility distribution of size 1
 
+        # print ("sparse w:", w)
         #Z-update
         #Similar to W-update
 
@@ -79,7 +83,7 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
 
         #Stopping criterion (close enough to optimum solution)
         if (r_norm < eps_pri and s_norm < eps_dual):
-            print ("---STOPPING  ON ITER %d---" % (k+1))
+            # print ("---STOPPING  ON ITER %d---" % (k+1))
             return w
 
-    print ('---STOPPING ON ITER %d---' % fin)
+    # print ('---STOPPING ON ITER %d---' % fin)

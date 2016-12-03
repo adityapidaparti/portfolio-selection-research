@@ -2,6 +2,7 @@ import numpy as np
 # from compute_PRM import compute_PRM, compute_from_csv
 from sparse_port_admm import *
 from pandas import read_csv
+import matplotlib.pyplot as plt
 
 #Lazy updates Algorithm
 #PRM = Price relative matrix of dimensions num_days x num_stock (numpy array)
@@ -29,9 +30,10 @@ def lazy_updates_admm(eta, alpha, PRM = data, gamma = g, rho = r, beta = b):
     #portfolio for 1st day, allocate wealth equally across assets
     weight[0:, 0] = np.ones(num_stock) * (1/num_stock)
 
-
     #2nd through last day
-    for day in range(1, 3):
+    # eta = .1
+    # alpha = 0.000001
+    for day in range(1, num_days):
         print("Day %d, Wealth: %f" % (day, wealth[day-1,0]))
 
         prev_day_weight = weight[:, day-1]
@@ -41,13 +43,24 @@ def lazy_updates_admm(eta, alpha, PRM = data, gamma = g, rho = r, beta = b):
         w = sparse_port_admm(prev_day_weight, prev_day_data, eta, beta, alpha, rho)
         # print ("w: ", w)
         #updates
-        weight[:, day] = w
 
+        weight[:, day] = w
         new_wealth = wealth[day-1, 0] * np.dot(weight[:, day], PRM[:, day])
         transaction_cost = gamma*abs(wealth[day-1, 0])*np.linalg.norm(weight[:,day-1]-weight[:,day],1)
         wealth[day, 0] = new_wealth - transaction_cost
 
+        # if day % 100 == 0:
+        #     print ("w: ", w)
+        # if day == num_days or np.isnan(wealth[day,0]):
+        #     print ("w: ", w)
+        #     plt.plot(wealth[0:day])
+        #     plt.show()
+        #     raise RuntimeError('stop')
+
+    print(wealth[num_days - 1, 0])
+    raise RuntimeError('stop')
     # print (len(wealth), num_days)
+
 
 for h in range(-6,3): #h is eta, which is weight on log
     for a in range(-6,3): #a is alpha, which is weight on L1 norm

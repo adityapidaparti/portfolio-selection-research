@@ -1,1 +1,1 @@
-W, Z, and U updates all work. Only remaining issue is number of iterations
+Code works in 95% of scenarios, but fails occasionaly. Weird.

@@ -1,5 +1,6 @@
 import numpy as np
 from compute_PRM import compute_PRM, compute_from_csv
+import matplotlib.pyplot as plt
 
 #EG Algorithm
 #PRM = Price relative matrix of dimensions num_days x num_stock (numpy array)\
@@ -32,11 +33,12 @@ def eg_Portfolio(PRM, eta):
 
 	print (wealth)
 	print (len(wealth), num_days)
+	return wealth
 
 ##Testing
-days_to_run = 3650/2 #roughly 10 years
-PRM = compute_PRM(days_to_run)
-eg_Portfolio(PRM, 0.05)
-
-# PRM = compute_from_csv('nyse.csv')
+# days_to_run = 3650/2 #roughly 10 years
+# PRM = compute_PRM(days_to_run)
 # eg_Portfolio(PRM, 0.05)
+
+PRM = compute_from_csv('nyse.csv')
+w = eg_Portfolio(PRM, 0.05)
