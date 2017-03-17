@@ -1,31 +1,19 @@
 import numpy as np
 
 def find_y(v,z): #projection to simplex
-    # print ("=== In Find_y ===")
     mu = np.sort(v)[::-1] #sort in descending order'
-    # print ("mu: ", mu)
     rho = 1
-    for j in range((len(mu))):
-        residual = mu[j] - ((sum(mu[0:(j+1)]) - z)/(j+1))
-        # print ("Mu shape: ", mu.shape)
-        # print ("residual: ", residual)
+    # print ("mu: ", mu)
+    for j in range(1,(len(mu)+1)):
+        residual = mu[j-1] - ((sum(mu[:j]) - z)/(j))
         if (residual > 0):
-            rho = j+1.0
-    #         print('rho: ', rho)
-    # print ('rho out of loop: ', rho)
+            rho = j
 
-    theta = (sum(mu[0:(rho+1)])-z)/rho
-    # print ("mu dist: ", mu[0:(rho+1)])
-    # print ('rho: ', rho)
-    # print ('z: ', z)
-    #
-    # print("theta: ", theta)
+    theta = (sum(mu[0:(rho)])-z)/rho
+
     new_v = v
     for i in range(len(new_v)):
         new_v[i] = max(new_v[i]-theta, 0)
-    # new_v = np.amax(v-theta, 0)
-    # print (new_v)
-    # print ("=== End Find_y ===")
     return new_v
 
 def shrinkage(x, kappa):

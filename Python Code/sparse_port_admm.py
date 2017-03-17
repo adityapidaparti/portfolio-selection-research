@@ -15,13 +15,13 @@ import numpy as np
 from numpy import linalg as la
 from supporting_funcs import find_y, shrinkage
 
-def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
+def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho, debug = False):
 
     #Inputs
     QUIET    = 1
-    MAX_ITER = 1000
-    ABSTOL   = 1e-4
-    RELTOL   = 1e-2
+    MAX_ITER = 1000 #Default 1000
+    ABSTOL   = .0001 #Default .0001
+    RELTOL   = .01 #Default .01
     n = len(w_t)
     w = np.zeros(n)
     z = np.zeros(n)
@@ -29,9 +29,6 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
 
     #equal to the sum of each weight multiplied by its price relative
     const = np.dot(w_t, x_t)
-    # print ("w_t: ", w_t)
-    # print ('x_t: ', x_t)
-    # print ("const: ", const)
 
     #debugging
     count = 0
@@ -44,31 +41,16 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
         w_temp = (eta/((rho+beta)*const))*x_t + w_t + (rho/(rho+beta))*z - (rho/(rho+beta))*u
         w = find_y(w_temp, 1) #projects onto a probablility distribution of size 1
 
-        # print ("sparse w:", w)
         #Z-update
         #Similar to W-update
-
-        #Z-update in Python is off from MATLAB quantities ever so slightly,
-        #My guess right now is that it's due to floating point numbers
-        #However, considering how accurate the values are, I'm leaving this for now
         z_old = z
         threshold = gamma/rho
-        # print ("w", w)
-        z_temp = (w - w_t + u)
-        # print("z_temp is: ", "threshold is: ", threshold)
-        z = shrinkage(z_temp, threshold)
-        # count += 1
-        # print (z)
-        # if count == 3:
-        #     raise Exception
 
-        #U-update
-        #Last step
+        z_temp = (w - w_t + u)
+        z = shrinkage(z_temp, threshold)
+
+        #U-update, last step
         u += (w - w_t - z)
-        # count += 1
-        # print ("u: ", u)
-        # if count == 3:
-        #     raise Exception
 
         #Computing primal and dual residual
         #Stopping criteria/convergence
@@ -79,11 +61,17 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho):
         eps_dual = (n**.5) * ABSTOL + RELTOL * la.norm(rho*u)
 
         if not QUIET:
+            print ('---- ITER %d ----' % (k+1))
+            print ("w:", w)
+            print ("z:", z)
+            print ("u:", u)
+            print (la.norm(w),la.norm(-w_t),la.norm(-z))
             print (r_norm, eps_pri, s_norm, eps_dual)
 
         #Stopping criterion (close enough to optimum solution)
         if (r_norm < eps_pri and s_norm < eps_dual):
-            # print ("---STOPPING  ON ITER %d---" % (k+1))
+            if debug == True:
+                print ("---STOPPING  ON ITER %d---" % (k+1))
             return w
-
-    # print ('---STOPPING ON ITER %d---' % fin)
+    # print ("---STOPPING  ON ITER %d---" % (k+1))
+    return w

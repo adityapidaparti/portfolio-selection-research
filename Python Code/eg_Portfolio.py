@@ -35,10 +35,10 @@ def eg_Portfolio(PRM, eta):
 	print (len(wealth), num_days)
 	return wealth
 
-##Testing
-# days_to_run = 3650/2 #roughly 10 years
-# PRM = compute_PRM(days_to_run)
-# eg_Portfolio(PRM, 0.05)
+#Testing
+days_to_run = 3650/2 #roughly 10 years
+PRM = compute_PRM(days_to_run)
+eg_Portfolio(PRM, 0.05)
 
 PRM = compute_from_csv('nyse.csv')
 w = eg_Portfolio(PRM, 0.05)

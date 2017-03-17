@@ -17,7 +17,8 @@ def compute_PRM(num_days):
 	# print (PRM.shape)
 	return PRM.as_matrix()
 
-test = compute_PRM(10000)
+# test = compute_PRM(10000)
+# print (test)
 
 def compute_from_csv(file):
 	PRM = read_csv(file, sep=',',header=None)
