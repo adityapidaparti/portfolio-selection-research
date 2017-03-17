@@ -34,10 +34,6 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
     %     W-update (portfolio update)
     w_temp = (eta/((rho+beta)*const))*x_t + w_t + (rho/(rho+beta))*z - (rho/(rho+beta))*u; %Inside of 1st step Algorithm 1
     [w] = find_y(w_temp,1); %projects onto a probability distribution of size 1
-    % fprintf('\nsparse w: ')
-    % [w]
-
-
 
     %     Z-update
     %Step right below portfolio update
@@ -47,21 +43,12 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
     z_temp = (w - w_t + u);
 
     z = shrinkage(z_temp,thresh);
-    % count = count + 1;
-    % fprintf('z: %f\n', z);
-    % if count == 3
-    %   throw(MException('a', 'b'));
-    % end
-
 
     %     U-update
     %Last step; below above
     u = u + (w - w_t - z);
-    % count = count + 1;
-    % fprintf('u: %f\n', u)
-    % if count == 3
-    %   throw(MException('a','b'));
-    % end
+
+    % fprintf('---- Iter %d ----', k);
 
     % Compute primal and dual residual
     %The convergence/stopping criteria
@@ -72,7 +59,7 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
     history.eps_dual(k)= sqrt(n)*ABSTOL + RELTOL*norm(rho*u);
 
     if ~QUIET
-      fprintf('%3d\t%10.4f\t%10.4f\t%10.4f\t%10.4f\n', k, ...
+       fprintf('%3d\t%10.4f\t%10.4f\t%10.4f\t%10.4f\n', k, ...
         history.r_norm(k), history.eps_pri(k), ...
         history.s_norm(k), history.eps_dual(k));
     end
@@ -80,12 +67,9 @@ function [w] = sparse_port_admm(w_t, x_t, eta, beta, gamma, rho)
     % Stopping Criterion (close enough to optimum solution)
     if (history.r_norm(k) < history.eps_pri(k) && ...
         history.s_norm(k) < history.eps_dual(k))
-      % fprintf('---STOPPING CRITERIA ON ITER %d---\n', k)
-      fin = k;
       break;
     end
   end % end k iteration
-  % fprintf('---STOPPING ON ITER %f ---\n', fin);
 end % end function
 
 % projection to simplex

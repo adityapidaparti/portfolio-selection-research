@@ -1,1 +1,1 @@
-Code works in 95% of scenarios, but fails occasionaly. Weird.
+Finished debugging. Code works equally well in MATLAB and Python. Results are stored in Debugging.csv

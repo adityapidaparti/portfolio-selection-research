@@ -9,25 +9,12 @@ w vectors from MATLAB, and the find_y function in Python appears to do nothing.
 This is still all within the floating point error range.
 TODO: Look into how/why w_temp malfunctions, but in an ok way.
 
-Z-update:
-Values are slightly off, but in the correct spot. Chalking it up to floating point
-errors currently.
-
-U-update:
-U-update working properly, once accounting for floating point errors
-
-Iterations:
-Iterations are fine. Due to floating point errors, not exactly the same
-
 Current modifications:
 
 Code fails on day 1120 for the case displayed. In 95% of cases, it appears to
 run properly, which is concerning. However, this instance fails.
 Current process involves throwing errors to see what is happening around that
 time-period in both the MATLAB and the Python code.
-
-TODO: Step through the days to see where errors are occurring around day 1119.
-USE THE ETA AND ALPHA SPECIFIED BY E AND A
 
 NOTE: MATLAB code is 1 day 'ahead', as in day 120 in MATLAB corresponds to day 119
 in Python.

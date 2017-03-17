@@ -1,48 +1,581 @@
-data/.vs/port_sel_web1/v14/.suo.i
-data/MATLAB Code/nyse.csv.d
-data/.vs/port_sel_web/v14/.suo.i
-data/MATLAB Code/nyse.csv.i
-data/Papers/Online Lazy Updates for Portfolio Selection with Transaction Costs.pdf.d
-data/Python Code/lazy_updates_admm.py.i
-data/Papers/Capital Growth and the Mean-Variance Approach to Portfolio Selection.pdf.d
-data/Python Code/eg_Portfolio.py.i
-data/MATLAB Code/eg_Portfolio.m.i
-data/Papers/Capital Growth and the Mean-Variance Approach to Portfolio Selection.pdf.i
-data/Papers/Online Lazy Updates for Portfolio Selection with Transaction Costs.pdf.i
-data/Python Code/find_y.py.i
-data/Python Code/sparse_port_admm.py.i
-data/Python Code/spares_port_admm.py.i
-data/Papers/Online Quadratically Constrained Convex Optimization with.pdf.d
-data/Python Code/__pycache__/supporting_funcs.cpython-35.pyc.i
-data/Papers/Online Quadratically Constrained Convex Optimization with.pdf.i
+data/.git/objects/dc/b90140e9edf3d07686a718dc08e30bf63cb31a.i
+data/.git/objects/03/1e4af2c526974f9cf6abb6ceae6bb92c18f7a5.i
+data/.git/objects/ca/56541e4fed46dd60aeef2942870020b1e9a2f1.i
+data/.git/objects/9d/7b86954259bc528aa78660a5c897bdf36b4274.i
+data/.git/objects/19/4eba1847f469b78bdd51bab10454106e386600.i
+data/.git/objects/ee/d517ef4f0b9fb8ad90b018e73dbbb4c525ce72.i
+data/.git/refs/heads/master.i
+data/.git/objects/21/c99b41ff6c47c630120eaa087a5fcc64230ce1.i
+data/.git/objects/6f/f02a0e42a14d94bd01f01c5f0ec949576d31ad.i
+data/.git/objects/21/c99b41ff6c47c630120eaa087a5fcc64230ce1.d
+data/.git/objects/d9/393070c086423b1675aca7efca4e63cd659e41.i
+data/.git/objects/66/10119296fd3c4b986e8722aff012064061ae84.i
+data/.git/objects/5c/e1f90a349a32bc66048295cb0e02aa71678c45.i
+data/.git/objects/b7/90cf08862006bacb565cd5dd4f9ee3b9e3ffdd.i
+data/.git/objects/a2/0ab79edc933e2826d6e17253df17c55e6055de.i
 data/MATLAB Code/nyse.mat.d
-data/Papers/Capital Growth Theory.pdf.i
-data/Papers/Online Learning and Online.pdf.i
-data/Papers/On-Line Portfolio Selection Using Multiplicative Updates.pdf.i
+data/.git/objects/cb/d9b6aa810406dfb6d814497aed57b53b43cbb4.i
+data/.git/objects/77/9455ca4854e2d90639c4d0be88e2b2ca1e9bf6.i
+data/.git/objects/cb/d9b6aa810406dfb6d814497aed57b53b43cbb4.d
 data/MATLAB Code/nyse.mat.i
-data/Papers/Capital Growth Theory.pdf.d
-data/Papers/On-Line Portfolio Selection Using Multiplicative Updates.pdf.d
-data/Papers/Lazy Updates.pdf.d
-data/Python Code/__pycache__/compute_PRM.cpython-35.pyc.i
-data/Python Code/nyse.csv.i
-data/Papers/Lazy Updates.pdf.i
-data/Papers/eg_Portfolio paper.pdf.d
-data/MATLAB Code/sparse_port_admm.m.i
-data/port_sel_web.pyproj.i
+data/.git/objects/4d/8a39a331af81b2ca1e660b9c79399a3f52bed1.i
+data/.git/objects/48/6f037cc15e70fe78df8672298e943c89987a7d.i
+data/.git/objects/f7/af2c813f260d992f3803868378bcd9ef3074b2.i
+data/.git/objects/c5/5e2220f77402b25fea522740b87c2f18cab017.i
+data/.git/objects/c6/5407cc44c62d83e9d4cf179bba734fa094e97f.i
+data/.git/objects/aa/a8a595a1d0eead03358caff296d73424a1c283.i
+data/.git/objects/32/03f3d145cbb8d1cb246bbd1829e2a36fe3f446.i
+data/.git/objects/72/90c6c28e3affa83cc9c0d1f8760134d2c31b8e.i
+data/.git/objects/ae/9e70a9c5908e82f53ddfade7b9dbd1d42a02c4.i
+data/.git/objects/d9/393070c086423b1675aca7efca4e63cd659e41.d
+data/.git/objects/c3/cd83568a2c7b4354ad89c70fd8bd12d3594176.i
+data/.git/objects/31/88f35c0a87427d9a0c3db1a8b685b55688b6be.i
+data/.git/objects/d9/540d2405eb304545910a07e99ec5027d8641df.i
+data/.git/objects/2c/0e082257335276c2da6ba9db0e543dba59a3c4.i
+data/.git/objects/50/9db5f0adece38d4dfbc5e0ccd907c590f09230.i
+data/.git/objects/af/104dbb99a4b9f2205d1ee3494b10ca7edb90b7.i
+data/.git/objects/16/5bb95082f124cb231a4ada9c9f8759eaf47eb8.i
+data/Papers/Online Lazy Updates for Portfolio Selection with Transaction Costs.pdf.d
+data/.git/objects/dc/dc968c11050ac90a96f7ffcc04b9af9b69b51b.i
+data/.git/objects/a3/80229b7d6cc3886a465dbe146a21415bd06b0d.i
+data/.git/objects/cc/d1f3be0c8e2e9f3ccfe1205183f825728149ff.i
+data/Papers/Online Lazy Updates for Portfolio Selection with Transaction Costs.pdf.i
+data/.git/objects/c1/11dd6fcdce5c76a8d59b5bf5de8081a1b52927.i
+data/.git/objects/a4/91d826e16c4bf61bdcf37303d364aea819c9a9.i
+data/.git/objects/b2/ed79b4df155e5ee12b570cd5aa682ccbd95ab0.i
+data/.git/objects/de/c28c8db10c52562979c498141f7165a0ec9d3d.i
+data/.git/objects/a1/6b2a786de0553a9ab4e888197a257d81677657.i
+data/.git/objects/40/648d93e4df10d85b3cc69535f3b526e35279e3.i
+data/.git/objects/f8/a5a3c54d246a389b2eb65c43062e1568e57a58.i
+data/.git/objects/d1/beea77f8fafa7c4b95137a300c6fc1223a4a6b.i
+data/.git/objects/d9/0d38fa71069dd061f8a893e7f87abdfb6c150d.i
+data/.git/objects/c0/6d98b24242281229af319f872ea9f10dae5b02.i
+data/.git/objects/e0/60066b14df820c064e385751de17682806042c.i
+data/.git/objects/68/4880f53f4011edc337153f12aa0e29cb4974de.i
+data/.git/objects/56/105ef507fa33a0d68f27b515bf3ac748ebce08.i
+data/.git/objects/0a/1f09c4801ec38aaa5a8e5e288270b76c1898b9.i
+data/.git/objects/cc/ca787538d4e8648907ef2744a649724ed343b1.i
+data/.git/objects/23/25d6586a412009d3ae3a1a57fc787415c359a9.i
+data/.git/objects/40/bd171f5dd17f35e977653feccbd1b9dd1faede.i
+data/.git/objects/40/bd171f5dd17f35e977653feccbd1b9dd1faede.d
+data/.git/objects/5e/58c2ab260dffa6e3a7510b6f281bced70bde4f.i
+data/.git/objects/f8/fd6e0bfd4655ee9b59634503e79679f9cb44d8.i
+data/.git/objects/46/401c98ca97502328683e21c3aed7a0a1230fbb.i
+data/.git/objects/31/6f5e6f22926024afa259c8188a77789adf9d23.i
+data/.git/objects/13/1bac82722426f3d03044ab1f6d1a9d19845aca.i
+data/.git/objects/ac/de26be72cc98ce675759796d403f4c46828e69.i
+data/.git/objects/02/72fb5dfe61354450c9c53e52ce943158de73fa.i
+data/.git/objects/d1/db58c43cb4ba84cfe8949a3191ba9088d86ec1.i
+data/.git/objects/99/c5543d00922828d033721d7d80fcad819aac56.d
+data/.git/objects/09/a1262e2293e7fafaf3406b70e4a6df0b8a6a8d.d
+data/.git/objects/98/405844447d3b3409dab5dfa92aa6fa2647ce62.i
+data/.git/objects/09/a1262e2293e7fafaf3406b70e4a6df0b8a6a8d.i
+data/.git/objects/07/708d5d4767ccb39d3d36a60e2f8503b6d9e866.i
+data/.git/objects/99/c5543d00922828d033721d7d80fcad819aac56.i
+data/.git/objects/d8/0d4ce473534a1a48edf136b14930d76cc9f1a6.i
+data/.git/objects/f4/55e4c648a37f7273d6900523c25f1fd2632644.i
+data/.git/objects/f3/034a4786ce77d4965c872daee59d126834c7c1.i
+data/.git/objects/24/00eff389b18910661063ae5db7abba46bd3ffe.i
+data/.DS_Store.i
+data/MATLAB Code/eg_Portfolio.m.i
+data/.git/objects/fa/5f96b152bb3eddc79bbe78dec2342bb2a348e7.i
+data/.git/objects/3c/0c7f84013ab42a64c2b91c44bc0f41bd4f98e6.i
+data/.git/objects/e9/d6d3fe3063b3d1cd51377258cd2e32808eae58.d
+data/.git/objects/ef/84c1f4e48bd7f7d8788e3da2b696d148b5eb4e.i
+data/.git/objects/97/e5635837eb08a924afc410c62daab3e6ae7490.i
+data/Python Code/python_data.csv.i
+data/.git/objects/e9/d6d3fe3063b3d1cd51377258cd2e32808eae58.i
+data/.git/objects/85/b0445451e835c06d52fabe9d13b9b9baf23236.i
+data/.git/objects/98/f88fd5b7b01a5c22555f393847999fbb7df089.i
+data/.git/objects/9f/b6715754ecde437aadaa51c70abfba83306ac5.i
+data/Papers/Online Learning and Online.pdf.i
 data/Papers/Online Learning and Online.pdf.d
-data/MATLAB Code/find_y.m.i
-data/Python Code/nyse.mat.d
-data/Python Code/supporting_funcs.py.i
-data/Python Code/nyse.mat.i
-data/test.txt.i
-data/port_sel_web1.pyproj.i
-data/Papers/eg_Portfolio paper.pdf.i
-data/Python Code/compute_PRM.pyc.i
-data/MATLAB Code/lazy_updates_admm.m.i
-data/README.i
-data/Python Code/__pycache__/compute_PRM.cpython-34.pyc.i
+data/.git/objects/3d/a6d7284930bcd8e21382084e9f6e328d6d285a.i
+data/.git/objects/7e/8cb06c3348ccf2d0a9744bf948f3b31d9a74e1.i
+data/.git/objects/78/8f8b4fe289a1531dcff64271bb60634f60393d.i
+data/.git/objects/84/2cb29b437fe75f6776c82767e59c6c719e8747.i
+data/.git/objects/b0/927adada45affe0d96587814fb53b621138a44.i
+data/.git/objects/a3/1dae129a72736a67c36a4b4b2a4f033e7b00aa.i
+data/.git/objects/ed/bdebc8c33865b4fe6c088171a5e0b88267d019.i
+data/.git/objects/27/033b61aaede1106b4ceee41bc0511cf4ed327e.i
+data/.git/objects/42/8a3e290ee7406a3ad0139b2ba211d7cebcf47f.i
+data/.git/info/exclude.i
+data/.git/objects/7e/5fb0ce3f27630a46743ff8532ffc523081040b.i
+data/.git/objects/73/510cfdcb81dbf49f18135dd0dc19bb19e33ee5.i
 data/Papers/Online Portfolio Selection A Survey.pdf.d
-data/Python Code/compute_PRM.py.i
-data/Python Code/__pycache__/sparse_port_admm.cpython-35.pyc.i
+data/Python Code/nyse.csv.i
 data/Papers/Online Portfolio Selection A Survey.pdf.i
+data/.git/objects/15/514d46d78e76f2ea15250e4ee471388a97e195.i
+data/.git/objects/7a/92ec1af8c22c7bf38e92d6bf70dfa97a780a33.i
+data/test.txt.i
+data/.git/hooks/post-update.sample.i
+data/.git/objects/de/477b23901d3c1ad7a9521356f36cdd85cd9352.i
+data/.git/objects/dc/c4c4f4c6f0de3fa73554b197d77fc18148a518.i
+data/.git/objects/bf/c86fd7d87774f5dc63ea56c22bd5c57c571c9e.i
+data/.git/objects/d3/a8311050e54c57c5be7cfe169e60a95768812c.i
+data/.git/objects/11/b3c558f3c2823406239223f2d65dadb4517980.i
+data/.git/objects/3e/35a5ec4322faa8a2d6fa147b36fae3a12bdc35.i
+data/.git/objects/98/00d3547628e6e1e6181fd753fffaf1eafeae1a.i
+data/.git/objects/ef/c089a34053c73bff299033578a29524a209c55.i
+data/Python Code/spares_port_admm.py.i
+data/.git/objects/03/822800e68408409b01901776ca482b260469c9.i
+data/.git/objects/a9/74a849efb39137976627c170dff0cc69b7e65f.i
+data/MATLAB Code/sparse_port_admm.m.i
+data/.git/objects/98/e4431d2bb0e6bb83eefff61cdf109cf05c2510.i
+data/.git/objects/cb/4f8e4de2d8cf05cb0a408e67971b6830e88205.i
+data/.git/objects/fc/3528806194d7c2a3d745b86351ee093e1dd0f8.i
+data/.git/objects/8a/c8feac27c107cf9f17ec6fc014d6d460ff78fd.i
+data/.git/objects/71/6e0e4f77a537d070605c5feed946159b11efe9.i
+data/.git/objects/46/a92b420c7e8e04dd989f54ff39037acea8a4bf.i
+data/.git/objects/78/8fef037ce1da37c8b33be41fb80c81003f9160.i
+data/.git/objects/a7/9daeade166e48c63b7683fa5dfb6bc3ea99455.i
+data/Python Code/__pycache__/compute_PRM.cpython-34.pyc.i
+data/.git/objects/8f/ecbb871e709a2638023a37aabb6a9dd417132d.i
+data/.git/objects/bd/525b9ec26081f7eb452a2f34d389d42a5667c6.i
+data/.git/objects/f9/5c46b82d0a0a27956ac954bb523a2862be4fff.i
+data/.git/objects/d3/9d3b5ffb60aa157e20cf4600ecbc4cb894251a.i
+data/.git/objects/8f/7f5ff13e48288371464e9751e87fd6029b8254.i
+data/.git/objects/9b/1e1238a1cbc21e0d0aba4898cf28ee52817667.i
+data/.git/objects/ed/5150e344fd2c50d7895ffc54392c382e753352.i
+data/.git/objects/47/b51940bd463a84af11bad72e597ef9ccb0d097.i
+data/.git/objects/f3/4f2be2ad6bb06351cd36b9ba999655a2b726e5.i
+data/.git/objects/09/2f9a7a279c23621152293b4a47b6c029e1de73.i
+data/.git/objects/66/c8b16a222ba0e4ee92c5b915e04ed38e16dc90.i
+data/.git/objects/e8/95e68ad6e5e44e2bbdf5baff31ce97d27c577e.i
+data/.git/objects/37/a7925978f0a8a362444095197c2aa5d6234f9a.i
+data/.git/index.i
+data/.git/hooks/prepare-commit-msg.sample.i
+data/.git/objects/a6/e05180d35a4bd3b564ab1dcd7417b15e2e6262.i
+data/.git/objects/33/2612da596483bec292e88345102db4dc6a0624.i
+data/.git/objects/1a/acc94995d958b84f267226a58f26ffd6d62220.d
+data/.git/hooks/pre-rebase.sample.i
+data/.git/objects/a6/e05180d35a4bd3b564ab1dcd7417b15e2e6262.d
+data/.git/objects/ec/30a614a6409b60734d069b023de227c228a907.i
+data/.git/objects/1b/39b9131019cd8dcec58d37b42a26380aa498a3.i
+data/.git/objects/7e/1f90d586e610c44bc4a61184734220cb267a65.i
+data/.git/objects/1f/614ab93e2c6507bd69474eb6f00fe8f6ee4077.i
+data/.git/objects/55/7cc9c2f5df00c9d02c07c1afa3094ee3d58269.i
+data/Papers/Capital Growth Theory.pdf.i
+data/Papers/Capital Growth Theory.pdf.d
+data/.git/objects/28/cb332a2a4c0eedba8c4c5063927575caf7121b.i
+data/.git/objects/34/6e0c51fba258d30659ef20cae7e9e8b706690a.i
+data/.git/objects/75/d4b48e61f1684433f178590d491599315b1956.i
+data/port_sel_web.pyproj.i
+data/MATLAB Code/find_y.m.i
+data/.git/objects/44/ba333988162a09c8022785061a97a3c9acb04f.i
+data/Python Code/nyse.mat.i
+data/.git/objects/ea/12375b47c9bac5417552cb8e0b496935833c8a.d
+data/.git/objects/a6/da5f32ede2238051046d43550a177fa3913310.i
+data/.git/objects/4c/c727c30498d2d0657b1c99e2c1039207b279e8.i
+data/.git/objects/d3/1df4bb6fa3e35af309dab634fb0e6499d7abe2.i
+data/.git/objects/db/94b39e7080fc82ea846f12a0d3c68b17ac6db2.i
+data/.git/objects/bd/9b00912844cd87ce39f3d63d4ddc18401399a0.i
+data/.git/objects/f8/7b8837515bed2de8d37b8e3e107557b9af0a4d.i
+data/.git/objects/0c/1a0f9df9ab968794c1deb51057452674972263.i
+data/.git/objects/bc/310d650b27fc2946a5686b7d8ef178f7e5adfb.i
+data/.git/objects/3e/cc4c4597dea38884cf9713a3f970047ab7da4f.i
+data/.git/objects/bd/9b00912844cd87ce39f3d63d4ddc18401399a0.d
+data/.git/objects/6c/ac78b21cf0c358fa94f6caafbeba474bb5f11f.i
+data/.git/objects/47/3ca3a50818c8cbf44ac3f53738e41d629a2462.i
+data/.git/objects/a7/74dd7422d75b0404f1c6b66a73eff98b750ff9.i
+data/.vs/port_sel_web/v14/.suo.i
+data/.git/objects/cb/aa66cab93350671ec8d9c23fa3ce789a953fa8.i
+data/.git/objects/ca/98d325148088ddfca16ba35c949b075d470c1b.i
+data/.git/objects/32/659861af090596e4893c491b84923140627f02.i
+data/.git/objects/0d/9ddd02f5fc9ee575877e6c501c3f34ce23a477.i
+data/.git/objects/c3/fb8895cb009b2dae53c96ded51081e0e6e8936.i
+data/.git/objects/c4/76b15017292b6d197638f8163906c01ded2862.i
+data/.git/objects/8a/e9b9a62589fc595fc791f2399d849c7f65a9a9.i
+data/.git/objects/1c/032271599df06c7f5410c93a5c7da70e0e2ca9.i
+data/.git/objects/da/cade56e23aa22ee5420169a1391e8e2e47b98e.i
+data/.git/objects/c6/62674955ef9bba2cc22528563008c94239bcd1.i
+data/.git/objects/a6/8adc2fc89af21a2dc5848b376d8bf8a15dedd9.i
+data/.git/hooks/pre-commit.sample.i
+data/.git/objects/70/a2b984b3f74375ca29e34ab582a64a02461048.i
+data/.git/objects/9f/00257ac091fc7c77467d2f716686ed1f0732dd.d
+data/.git/objects/f7/b26e9c154cdf19cccdbb081d29102a7f7f1ed9.i
+data/.git/objects/9f/00257ac091fc7c77467d2f716686ed1f0732dd.i
+data/.git/objects/2d/dbf44b89074aab4e118c6a0c389744a5f13796.i
+data/.git/objects/18/7f3b40f3100749575d352b8b6eb033a78a08d8.i
+data/.git/objects/53/528e40a409b3d74a8b915dcfa151a44bb0b5a1.i
+data/.git/objects/de/22510798edee0748d8f1a79f0a891cf76b3a29.i
+data/.git/objects/08/2107df14d48db8128012080d5f6a29cad666f0.i
+data/.git/objects/81/b81283d0fec92c626f11b75f234c96f77b757d.i
+data/.git/objects/4f/a0c839d1f93222925554866978695f13e71306.i
+data/.git/objects/df/fd40c1f356cafb5876ac24f549cf566b7c7267.i
+data/.git/objects/63/90a5f3a7d361bc75d60d2ad03bc2ab57c71264.i
+data/.git/objects/07/d7f277640c922f5e4e3376f69821b4f10e7cf9.i
+data/.git/objects/ca/6d877bc388b28f753ea94d6bbb36072e8a43e2.d
+data/Python Code/__pycache__/sparse_port_admm.cpython-35.pyc.i
+data/.git/objects/81/175eb872e5f0f72d2ebdbe43e3eeb89bc85dd8.i
+data/.git/objects/ca/6d877bc388b28f753ea94d6bbb36072e8a43e2.i
+data/.git/objects/66/37c889f0eaedd3a6d59a5786b8054e5c8d8c7c.i
+data/.git/objects/aa/498aea14a42b4e8034b926aaac1a4d6add7916.i
+data/.git/objects/8a/7a25e292866280b596736cb19c4c21d176033f.i
+data/.git/objects/e4/01e9c2dba9c55dd8dc0c5ed0218efb7ce63d61.i
+data/.git/objects/7b/e727972fe805be1637ff0f181ec4362a707b59.i
+data/.git/objects/2a/2c67aeadeee29cb811ac96f39af13c363d4ffd.i
+data/.git/objects/5c/fc563edf24d5dd64c37620168b9750cee3d22e.i
+data/.git/objects/fb/a95b34a22c5693b794a8e77282e69fc910031c.i
+data/.git/objects/f6/0a55cf656ed0c3900d92412aed7e8757640ca0.i
+data/.git/objects/c1/a8df3e048cb16b0390be3f2a3db50f4d96a14c.i
+data/.git/hooks/pre-push.sample.i
+data/.git/objects/63/5d9394d07d19679395315dab67fe801b91533f.i
+data/.git/objects/78/d4a31b349803fcc59332d565d4f656c6484568.i
+data/.git/objects/dd/264e55b99fe21e334844d782edfc9549854205.i
+data/.git/objects/9f/4431f84a4e0ca85d143c0f8bbdbffff0c78fe2.i
+data/.git/objects/5a/8ad7b17888af0146e1b9a3b7fd75d99305f8f5.i
+data/.git/objects/a8/9a96cfc6614892d5e97fe3002b96eac5797fb3.i
+data/Python Code/debug_python.csv.i
+data/.git/objects/06/76b25b3f87aa8a68223cceef61aee1113da823.i
+data/.git/objects/f0/ee0b82773701a58826a4326519a218b58dd0b6.i
+data/.git/objects/0a/7c56236c68ff685a20a3455bd0d8447258382f.i
+data/.git/objects/9f/4431f84a4e0ca85d143c0f8bbdbffff0c78fe2.d
+data/.git/objects/a7/7e47800815f69eeda9c38f35dd30aacac6a24c.i
+data/.git/logs/refs/remotes/origin/master.i
+data/.git/objects/a9/7ef2923cc873fcff836f2c5edce8840b79feb1.i
+data/.git/logs/refs/heads/master.i
+data/.git/objects/3b/448d287cc22c34c06c38c3ef52486494c7186c.i
+data/.git/objects/cc/5af048f232960bf4254974f34835796dd593e1.i
+data/.git/objects/f5/2169ba1ac177b88d9a6a7aae6b0601d274e5de.i
+data/.git/objects/8b/17812fa5dddb29465fef5f8aa7f2a21e53d3fe.i
+data/.git/objects/fd/9dcb5ccf37fd1cfa1afc1b19a5ad6ae75b4b35.i
+data/.git/objects/79/1830ac33d7c3c2467f001d49a1ae1502a9acfd.i
+data/.git/objects/2e/8cde2ba8430e962855cb24e8c7da63cf0d1cd6.i
+data/.git/objects/df/847a6ac17e755f7950dc931bdef8c62e5db927.i
+data/.git/objects/9c/f52073e0a8ef8807a864bd0bea8172816b25a1.i
+data/.git/objects/39/b7bb7a70afd1c0e08f06c2640ad2bc2571418d.i
+data/.git/objects/be/37b7dcc890e534ebcc07b05ecf9fee4473952c.i
+data/.git/objects/9f/e07740c74c411db7241f29488d776ae318913a.i
+data/.git/objects/e7/978d2656c5bcdac488e6a15d770abac91b77c8.i
+data/Papers/eg_Portfolio paper.pdf.i
+data/.git/objects/cb/1be9ee2b874b034fab8067fc0f13030b974565.i
+data/.git/objects/f5/44b9f320d0e94259078f7b2a5e667b2559f9b5.i
+data/.git/objects/1d/906357ced3ebe0c2375400d6bad24b73463b34.i
+data/.git/objects/ab/476ba66a23701b86b37603e4f50175acf347c2.i
+data/Python Code/eg_Portfolio.py.i
+data/.git/objects/f8/00150cb10222147428aebc25b791544579bcb4.i
+data/Debugging.xlsx.d
+data/.git/objects/61/a6c36c1475bc7718f5bdf5464eb8de3a291bd4.i
+data/.git/objects/0d/f30e9e0907d8a1502454c08ea7dd1de1c33771.i
+data/Debugging.xlsx.i
+data/.git/objects/52/7436b0eddb39df5fda3f8d92dbc13bfbb46cf7.i
+data/.git/objects/51/79d5de84b84310297a2483d5ed737c1d19e4f3.i
+data/.git/objects/67/c64abdba700119dbaae57fb65ecfe01a953d03.i
+data/.git/objects/86/51461ea883a7b5a8c5fd37103ef289db739cbc.i
+data/.git/objects/41/460167ab92872e3eccce38abe2949efa069284.i
+data/.git/objects/0c/51fba2e89d0053882ec283a3821111e15b4663.i
+data/.git/objects/4e/6b61dc5e3c071067cc8b9a0757cb5d871cac31.i
+data/.git/objects/d1/520768faef7ecb67a1ba357393dd2c51801988.i
+data/.git/objects/b2/489f304512ec4eb9c84d54f90df76ef98f3942.i
+data/.git/objects/a3/46897200087e600dca996b1cfc03f10901d1b9.i
+data/.git/objects/a0/45f79c3132c775cb3e9bb6e4119343f8c6ea14.i
+data/Papers/Lazy Updates.pdf.i
+data/.git/objects/15/b89d92d5c2ad75f7ac57684df720d8bdeabf4d.i
+data/.git/objects/c2/983c9510fa7067e19615dd3a3ede5332ea8ca2.i
+data/.git/objects/98/17bf8049b2adba48ddc352e3e511ca5d9fcf49.i
+data/.git/objects/bf/60068a648703457dffb905396c8f6b1a65e64b.i
+data/.git/objects/05/f1c7deff957ee04e4bba21d16ea1d792944297.i
+data/Python Code/compute_PRM.pyc.i
+data/.git/objects/c4/1cea43bce1f84dddf6ab1193a0bb3c29b1fd00.d
+data/.git/objects/c4/1cea43bce1f84dddf6ab1193a0bb3c29b1fd00.i
+data/.git/objects/d2/87970f006271c752a442c65a594c51433c00d2.i
+data/.git/refs/remotes/origin/master.i
+data/.git/objects/a3/9811e4553e383dc7a4a92b745670cd0d268586.i
+data/.git/objects/ba/52b9112bba9e47aff4aace1987e641d717eac6.i
 data/Python Code/nyse.csv.d
+data/.git/objects/cd/654aa6b7519c032c9fd43275d6c9976be51930.i
+data/.git/objects/08/ab5ab3f126d0450186cda9f27eefa75ce3fe74.i
+data/.git/objects/26/fae94e0c73e15d4cae2f0065066ce977ebb278.i
+data/.git/objects/9e/5444adee7737c8674926acd42bb6930343ec02.i
+data/.git/objects/f3/db95f35482cfa7d23e60c6a1a9f63c7c5d7720.i
+data/.git/description.i
+data/.git/objects/b4/e2b822289e81163cf195ea8882adf8d3bf48a8.i
+data/.git/objects/d7/d3628baf2d6863418df5c9397a98f563116fef.i
+data/.git/objects/f0/8ba7e12b3921ef3221a18059c89071fb611ae5.i
+data/.git/objects/9e/3b4999129736f3891bce9c936da35d7329d678.i
+data/.git/objects/d0/59e7b27dddc94cfbc94992e769682410a80a25.i
+data/.git/objects/f0/8ba7e12b3921ef3221a18059c89071fb611ae5.d
+data/Python Code/sparse_port_admm.py.i
+data/.git/COMMIT_EDITMSG.i
+data/.git/objects/3a/619f1496d0b0a43d8cbb7502ddbc87e0714bb8.i
+data/.git/objects/42/68d51f50f9b3e477a2b18a9edc413dc4049ccf.i
+data/.git/objects/3f/3f071d69f96043946acc4384e6e244d020d5f8.i
+data/.git/objects/83/56dea41b24df058c1f8af562ff960ae5467150.i
+data/.git/objects/35/35fca446c6ce7fdf2817cca81fcddc4be84956.i
+data/.git/objects/01/29242eead93f9e0568bfe1f7b4ab0c4af9293f.i
+data/.git/objects/f5/7a95ed87981b327a1a283189c0476df2f2b66d.i
+data/.git/objects/e6/7dcde064a92e83e3da1d2c4a53181f9755a4f4.i
+data/.git/objects/f2/458231e9e2d26c867f001ade2c20aad0c80e38.i
+data/.git/objects/0e/6c328c53f4f2bdc668b2d91024d898117db48f.d
+data/Python Code/__pycache__/compute_PRM.cpython-35.pyc.i
+data/.git/objects/ad/3a17c7bc60e05806c7469a288b16a88206e8a7.i
+data/.git/objects/87/eb43970421a572273bcdc66ec84f73418d9130.i
+data/.git/objects/0e/6c328c53f4f2bdc668b2d91024d898117db48f.i
+data/.git/objects/16/f7fba2e958911f449fca15e058f3028c4569bf.i
+data/.git/objects/33/bff00cd397aa5ee3d4a9eb3bfc3533a2064f47.i
+data/.git/objects/8a/38a1a73bc25eb336c00ccf05a56cd383717bc4.i
+data/.git/objects/e8/eca840a3391d9dbc834b18c98ffff1f5a97885.d
+data/.git/objects/07/7c24703bfad2b70389a1ebde80ce92288141a7.i
+data/port_sel_web1.pyproj.i
+data/.git/objects/03/51967707a204abb5f1e3db0cb54e98cb4bc14e.i
+data/.git/objects/47/16919436dbbc559e8a50a443069bf6c32829fe.d
+data/.git/objects/1c/81801ffcf6ec4690fb1c3657a33b3406658bab.i
+data/.git/objects/f4/61ec4c08431f43b7813ea0662a749d02273e2b.i
+data/.git/objects/f9/6eacc50f405a33bc23502056b35442d408ca29.i
+data/.git/objects/47/16919436dbbc559e8a50a443069bf6c32829fe.i
+data/.git/objects/3c/b35dccd000499200431b17a3831aa61aab8da2.i
+data/.git/objects/45/dcbf5277671bdf71db34e1c14e39ff206a5c37.d
+data/.git/objects/43/1cb8e1eddc0478a8e60534759caf75612f2baf.i
+data/.git/objects/43/1cb8e1eddc0478a8e60534759caf75612f2baf.d
+data/.git/objects/52/0affff2e994cd76e0d44d0b309ec5cf001e207.i
+data/.git/objects/45/dcbf5277671bdf71db34e1c14e39ff206a5c37.i
+data/.git/objects/81/e4196f9088a5c78ce76f2f524523de0dfcfc2e.i
+data/.git/objects/98/2003c1b4bf4c7a1fbd250e772137b2b90e52f8.i
+data/.git/objects/03/ff0f3001f6699badfd885ebb98a29ebce16114.i
+data/.git/objects/1f/006aca5360cf2edcddbf6b64c8f4140dc96b55.i
+data/.git/objects/c4/437b00af10dcca33d145df868b514a9b638ba7.i
+data/.git/objects/f3/74aaaf196cd7898cb5d6671100f8dc841bdf3c.i
+data/.git/objects/91/0ef618ded3247e791a893409cf08a464d37d97.i
+data/.git/objects/67/3946e1336ce8573b1892a1948868c780454e6e.i
+data/.git/objects/e9/ad4f17fc0639a4b1d261d7569f49950f77e938.i
+data/Python Code/__pycache__/supporting_funcs.cpython-35.pyc.i
+data/.git/objects/ac/d35de4cb6b446f44468ee6928463512a7af187.i
+data/.git/objects/c9/2dfeb225b095c73be77bfdf63b245dd7e7e329.i
+data/.git/objects/66/de18b0864ae30d60b0c6183c78eca0afc246ef.i
+data/Papers/On-Line Portfolio Selection Using Multiplicative Updates.pdf.d
+data/Papers/On-Line Portfolio Selection Using Multiplicative Updates.pdf.i
+data/.git/objects/3b/017b51dcbea2e32df077734ca8ad6a9da16c01.i
+data/.git/objects/12/9bee1cc743c58006ba3f53eab30ff09456d89e.i
+data/.git/objects/ef/4e961718fd476aab16ccb6b188b2cccd2a99c5.i
+data/.git/objects/a5/3a3b805eef8a79066b1d4d0679a7d1485a054d.d
+data/.git/objects/17/52cdfb9aeea405f7ddf78fc6fa095a3a9f8b18.i
+data/.git/objects/f1/cb7bf598ad19504b00fae8197c42416298a274.i
+data/.git/hooks/update.sample.i
+data/.git/objects/a5/3a3b805eef8a79066b1d4d0679a7d1485a054d.i
+data/.git/objects/f8/0af154037995ee9e733041ff6f1be069be0359.i
+data/MATLAB Code/lazy_updates_admm.m.i
+data/.git/objects/93/eb6d26fd791dc182457e3f8bbe5b79fd1301cc.i
+data/.git/objects/45/cf5f50d72a0a91065a22d779ed7113417aec58.i
+data/.git/objects/32/d30030ef53a62694f85697aa0c21ec21263ce0.i
+data/.git/objects/83/072cb781730db6e475afd6d375096d775c5823.i
+data/.git/objects/ae/cca48fdd9f19868a7c2fa66b0e888d7bef69c8.i
+data/.git/objects/fc/1504a41cc8c0fe5b3005423bc9b2de34965275.i
+data/.git/objects/50/59a8b9fd0c3fa61118ad4d0f19b2ed4fca0f95.i
+data/.git/objects/cf/ab1ce9b116c96dfbb33bf3858798b1a03b430e.i
+data/.git/objects/a6/18b3616c7c53ff59a911aed4ecb5700da9337b.i
+data/.git/objects/48/e7048a07b851cc9082ff01c974edff53229442.i
+data/.git/objects/f9/3c76c5782641d60bb82759200e3c367975f044.i
+data/.git/objects/5d/b195132d7b08e982e8844d9bc96d5f5352c901.i
+data/.git/objects/d3/b4a09f2256aab9f2c81a99181ec309150f0673.i
+data/.git/objects/e9/71a61a7d66944d14c5a81340fba72bb0e5d064.i
+data/.git/objects/1b/d94b9c25bf484fdf4b373ca04f5ce172f62052.i
+data/.git/objects/4a/d96d51599fb734101f6229f6c1a8a509bd6255.i
+data/.git/objects/56/cafa0d6802dcd3a631355abf4f433eb6234219.i
+data/.git/objects/43/2f2443cf789364497690731bc6e74293aa0bff.i
+data/.git/objects/24/786c1b3f03af149a8929898724b26affc8e4ad.i
+data/.git/objects/a7/589df6e27240cac3ae34f7928629825e3ae2d6.i
+data/.git/objects/26/b1c8644a8bd2b0404f11637e3bee5287fb74cd.i
+data/.git/objects/72/b4e07eaf52d77e492da21f12c7fdaff696610d.i
+data/.git/objects/97/2c8cd4bb53c1f326b60066eea5b70f16ebd1a7.i
+data/.git/objects/94/bcec50d78ffd8d9f7e8dce4e1962c682413be0.i
+data/.git/objects/8f/e9ff62e3a36a98fd22c077a6c3ca2a3eeed004.i
+data/.git/objects/7a/4a2f413c998cac4213b8cf303a809c41b70c61.i
+data/.git/objects/e8/03a8d30927dba8e7a1092804e1718b47e35d77.i
+data/Python Code/lazy_updates_admm.py.i
+data/.git/objects/74/f6ecc70638bcac46f0edaf162708df55366741.i
+data/.git/objects/26/7314ff10a39858ac9aec43ae5fbfe81d8d6ab2.i
+data/.git/objects/bd/187601e0246616fd803465f68297490503bf8b.d
+data/.git/objects/bd/187601e0246616fd803465f68297490503bf8b.i
+data/.git/objects/2c/a7880756bc3000eea8f14863d85b1e487a98dd.i
+data/.git/objects/a9/e339e72938e375da809d3df30dfffa43abe24f.i
+data/.git/objects/5c/e7f7ee000a9e99e118d05e96b1f1f2841e97e4.i
+data/.git/objects/b9/f6ce46bbdfe4c992092e8bf52e2226c9810805.i
+data/.git/objects/ee/d517ef4f0b9fb8ad90b018e73dbbb4c525ce72.d
+data/.git/objects/de/2c95bd7a8a1d32a66fc711eaae8a411a34846c.i
+data/.git/objects/c0/aa66bfe60068bdda082df700d48a464d003a65.i
+data/.git/objects/05/f1be1e5ef4589180d05c72f716aeafe70f0d19.i
+data/.git/objects/67/0991fc145717956355baef03b50fe98049b69f.i
+data/.git/objects/cd/b41dbf21fc12c5ab87edce4c4a66655975af1a.i
+data/Python Code/compute_PRM.py.i
+data/.git/objects/46/ca6eeb6b7cd67df876f8cd1c7c155449210e1f.i
+data/.git/objects/38/0b502fbda291e31941730d68a2d16925a95db7.i
+data/.git/objects/13/2175ec6cf22885e48843ae47af31bef5d06557.i
+data/.git/objects/6f/aa7462aefcb7beeb3aa2c384f0a75c7b87c7ba.i
+data/.git/objects/74/9e2446e4a7a25ee1a2cd26045b5ada570ab22b.i
+data/.git/objects/c8/ef5f327b4b5b8ae2fe05586e5236e7281b1987.i
+data/.git/hooks/commit-msg.sample.i
+data/.git/objects/25/28d16525dc748a2f43b622eebafc0a6f89efe6.i
+data/.git/objects/01/58e1470e10b564e067313e15c447599d833410.i
+data/.git/objects/ba/f0721726101993b6495eaf185c2f394692e784.i
+data/.git/objects/98/d7a6afad0c4e8a90d5544c48be5b877fdb55db.i
+data/.git/objects/0e/7f401abd4e427ad9100e0aad05960dc1b87e19.i
+data/Python Code/.DS_Store.i
+data/current_state.txt.i
+data/.git/objects/1a/acc94995d958b84f267226a58f26ffd6d62220.i
+data/Papers/Online Quadratically Constrained Convex Optimization with.pdf.d
+data/Papers/Online Quadratically Constrained Convex Optimization with.pdf.i
+data/.git/objects/e3/7a86e1515c9b8b31d879e4088c877d032eca0b.i
+data/.git/config.i
+data/.git/objects/49/2bffee2154461b46ef70f6709b99c859fc2664.i
+data/.git/objects/46/a92b420c7e8e04dd989f54ff39037acea8a4bf.d
+data/.git/objects/2f/f2512b8ff2d79cd673c19777c44385a5a0aab9.i
+data/.git/objects/8e/1a131fe4b19bdb5519da1f4361adb6f26cdb69.i
+data/.git/objects/0f/1f3e23503c1cbe5cde7a840326f7b5800227c7.i
+data/.git/objects/cf/6954e0ed39563fd80cf581fa9f7c6a602c93a2.i
+data/.git/objects/e7/b87e9db18667a4a7692e1c3c76f510bc347648.i
+data/.git/objects/1f/0b38b097f7154b6b59fc1cd3c551875b00ee3d.d
+data/.git/objects/11/8d920d0c17e48fd550d242229ce31a690aa94b.i
+data/.git/objects/37/0ddab0031f2d8e148d8b36b870712657d97c46.i
+data/.git/objects/44/94f2b240f06b9004f529d471a0a57aafc2b786.i
+data/.git/objects/59/716600987158c79e490320892da47c55a53af5.i
+data/.git/objects/1f/0b38b097f7154b6b59fc1cd3c551875b00ee3d.i
+data/.git/objects/e1/f648bc6273bd6f3ab20c0154c6c95d23490dbf.i
+data/Debugging.csv.i
+data/.git/objects/22/68f1804ff833c60408d17271251af666f09991.i
+data/.git/objects/46/7a24c7b3e1567999a51c5e108dc7be63dcee52.i
+data/.git/objects/78/8e1fee84ce18af9205e78dcd067c4c833cbb3e.i
+data/.git/objects/6f/48d241c0c7ebc7b4eb3a661695182d375ddd7b.i
+data/.git/objects/ac/9497a0119eed4f753d8dbc819939b46707ebf3.i
+data/.git/objects/3b/647cc375731a5a5061b0db32825e9706939242.i
+data/.git/objects/bf/03af2a1957d33f9cb9b12ad41c57008a85731d.i
+data/Python Code/nyse.mat.d
+data/MATLAB Code/nyse.csv.d
+data/MATLAB Code/nyse.csv.i
+data/.git/objects/db/32071b0fc146839c83b161d0c03b3a614f9942.i
+data/.git/objects/46/c866caa539eb8d46815c3e98a4748b494bed02.i
+data/Papers/Capital Growth and the Mean-Variance Approach to Portfolio Selection.pdf.d
+data/Papers/Capital Growth and the Mean-Variance Approach to Portfolio Selection.pdf.i
+data/.git/objects/6e/38f971b2e875589e4264d9488497d26d349c5f.i
+data/.git/objects/18/8def4584eeeb6f5af88ded17ac107b6de19ecc.i
+data/.git/objects/7c/65391f06f402136d696ebaf2b08eef95e2d3d2.d
+data/.git/objects/d7/5e1d7aca6df227257f1ece09127618d083c357.i
+data/.git/objects/d7/ced10f69e8cfe3683719ed415b4bc996ecaace.i
+data/.git/objects/7c/65391f06f402136d696ebaf2b08eef95e2d3d2.i
+data/.git/objects/41/e3b9a337b7d902e707470dec55c1003b16bc22.i
+data/.git/objects/77/6bba08cb8fe80d6239e1961b417daac65d0e3b.i
+data/.git/objects/4a/63978866493346d7f7adfdea2f6de87f41103c.i
+data/.git/objects/bf/19e5caa2386bae85f049bbca355f765b064da9.i
+data/.git/objects/d3/1cd4df27fc04ca28fe9884e5ed96e4341884e0.i
+data/.git/objects/a0/ab9675ddc5aad5b2fb9aa2d9d86b3dc2f699c1.i
+data/.git/objects/07/152cadcb3dad8ecfc1f9984aee32b06b0a278f.i
+data/.git/objects/99/e3ef8e970b2ad389499c5bb9e8560f3d645e41.i
+data/.git/objects/0c/c24a8eafbe0d5ac710bb29d3058a3e229639af.i
+data/.git/objects/0c/c24a8eafbe0d5ac710bb29d3058a3e229639af.d
+data/.git/objects/d7/403d0eb37dea056533a569a876a142231cc8d9.i
+data/.git/objects/9e/65398a6cf77cd4de38366461f4304ae5117e92.i
+data/Python Code/supporting_funcs.py.i
+data/.git/objects/7b/fa31ea2230536d2a4e4ec5ea4dbc0ca7522648.d
+data/.git/objects/b3/d37093c12788f22ba64b7106d5fbfe15aa365f.i
+data/.git/objects/f5/82cf4645443d17dc2d6a62b3dd29801f58b46f.i
+data/.git/objects/3e/05149d8f66d7d9fe6185065e1be343f0e927f0.i
+data/.git/objects/55/7960e2a1a1af2fe31acbe8307c3824f3a8b57d.i
+data/.git/objects/7b/fa31ea2230536d2a4e4ec5ea4dbc0ca7522648.i
+data/.git/objects/18/860c563e3f4f0114ddc60f31741e28ff46bdc8.i
+data/.git/objects/ab/29a5f233082fd9b2370f720ae4e098f0940365.i
+data/MATLAB Code/.DS_Store.i
+data/.git/objects/02/6db00711dd2e31e84186765a407b3773ff48b2.i
+data/.git/objects/b7/42b000e3a5a13361c885e4966e07d9f8911c17.i
+data/.git/objects/f9/3b50b6fa2fa15c2ec7145473c21792f9231b26.i
+data/.git/objects/87/79b9f9cf08b91967cd4ca9c7b78ed444eb285c.i
+data/.git/objects/c8/3c6913a5936f41c261c4a315ed28f774c26359.i
+data/Python Code/find_y.py.i
+data/.git/objects/a5/e73a89840a254e7b63bfa513bb33ba152a23b0.i
+data/.git/objects/87/e89bf24609cf77570764090e86d0256fe42f29.i
+data/.git/objects/88/b02459bac98edd91c236828d36debf11c5d07d.i
+data/.git/objects/37/9edd53a42c8a3c78bfec006b95bfa0dbd99381.i
+data/.git/objects/1f/686e1d2dc34db0eadd1adbdd62feeb7a91b87e.i
+data/.git/objects/64/bcea1349a1b899fa9d7f5d234adcafd786fdb5.i
+data/.git/objects/fe/fba9d9fa4591eac7284b19e92f08ff15f839f8.i
+data/.git/objects/c9/31c1703de78e56cd6c5095da47977f768b8308.i
+data/MATLAB Code/debug_matlab.csv.i
+data/.git/objects/6d/307a28ed6a66625ae8feeafdf5e9f86d547c36.i
+data/.git/objects/7d/ea49b44e9266c453986a6f350bc0b5e182580f.i
+data/.git/HEAD.i
+data/.git/objects/1e/befa4ebf8d2ea43daab60adb278d279b527ce8.i
+data/.git/objects/7b/30e4de7c2f0893ea97afb488b05c9ac4aa6d15.i
+data/.git/objects/f6/edb542a54ac2eb9a35556bebf5e7272e75315c.i
+data/.git/objects/bb/8beefda80f09f69b058980704c6288ce9eae8e.i
+data/.git/objects/85/5f401c3acdef45257f8f38d78a213e1e7612b2.d
+data/.git/objects/04/3b019e9c77902c1a03efffc9267ae819838252.i
+data/.git/objects/85/5f401c3acdef45257f8f38d78a213e1e7612b2.i
+data/.git/objects/e2/5a1dc7c395ed7ccca375d61a06db7054e9ad67.i
+data/.git/objects/11/04bad4c627aa5a80609ea348952b34696152fb.i
+data/.git/objects/c5/ca6ba1e5e1228eb01d18262882348b1060f3f0.i
+data/.git/objects/25/7be785d3d1ccc1995a2d7e41cd09df7e138c6e.i
+data/README.i
+data/.git/hooks/pre-applypatch.sample.i
+data/.git/objects/0f/950c807c7209d1e277a9ed7d94e086373388b7.i
+data/.git/objects/99/49ff420e701f41962ef6bc5c29a418b059d126.i
+data/.git/objects/0f/950c807c7209d1e277a9ed7d94e086373388b7.d
+data/.git/objects/b9/d32dfe630976bfe3a7106b159e9badeef28294.i
+data/.git/objects/24/5bddeb789857ddeb8b94d61825b94ba69b32ee.i
+data/.git/objects/c9/5366ad78a53a6d68a17661bf4c408cc8b1deb0.i
+data/.git/objects/ea/12375b47c9bac5417552cb8e0b496935833c8a.i
+data/.git/objects/7f/576ebcb696f204afb10dd44f74b014da4248f6.i
+data/.git/objects/f0/902cc4f1ad5d5e41cb5a39de083298e4cd3aab.i
+data/.git/objects/16/465bda82af3cba4797cc0589c7abc16fdf5f8b.i
+data/.git/objects/a3/1c337320be106d9dc2269d918ec10dc0177692.i
+data/.git/objects/16/465bda82af3cba4797cc0589c7abc16fdf5f8b.d
+data/.git/objects/19/ed40520d6fed3a6031c5c1e4d39d437ffb4ea8.i
+data/.git/objects/3b/d54be9686a88486fa3d58f9535ec4a6d63ccb8.i
+data/.git/objects/f4/15acc6b383b54d61c86e4fad2b3127314cbf60.i
+data/.git/objects/15/033c4e86543bfd49d16efecafd4f0c453ad405.i
+data/.git/objects/27/3c352336e96a4775f63b3ee6d0446fe545d5bc.i
+data/.git/objects/db/83299e662392ce2fe6672260596df9bf8015c8.i
+data/.git/objects/cc/ed65a58732c45613d8fc3fa895e2abdd5aefd7.i
+data/.git/objects/45/38a67d06b38b04e3c9a9ece090006e118f3c6b.i
+data/.git/objects/df/c485db0f80936fb4f981f4966e757ae73734b8.i
+data/Papers/Lazy Updates.pdf.d
+data/.git/objects/aa/f50369805b15a19a9b4686861d9e791d1cd3d7.i
+data/.git/objects/d8/3e60664b53f0374bf81d34cd76aa6011baf07e.d
+data/.git/objects/d8/3e60664b53f0374bf81d34cd76aa6011baf07e.i
+data/Papers/eg_Portfolio paper.pdf.d
+data/.git/objects/36/a55418448b6bd935bd3af7823f33cc86614536.i
+data/.git/objects/ce/af5cd39c00efc8cda0b57c1db123506e58ac49.d
+data/.git/objects/29/0c4ea15b678acedee0051d53682a079a117d77.i
+data/.git/objects/68/f5fe32c839d1b55ee34bb2cd0d2dd7a9043ada.i
+data/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391.i
+data/.git/objects/70/5e64841344e2ecfce6c3f640087c980fef366f.i
+data/.git/objects/a9/d89887f92828e135fb3ad4083226ae47b553a1.i
+data/.git/objects/50/6048b5ea46251fcfe36adb90cce01a6b0a0ef6.i
+data/.git/objects/e8/eca840a3391d9dbc834b18c98ffff1f5a97885.i
+data/.git/objects/77/ab76c1d0bfe2a10a71ca4752d537addf269ab0.i
+data/.git/objects/f6/a38179a5952f8bf0c45807391adbb971313dee.d
+data/.git/objects/3b/35e096593329397760b7e33bdc7d6e8478665e.i
+data/.git/objects/f6/a38179a5952f8bf0c45807391adbb971313dee.i
+data/.git/objects/a5/4b8eee45a199f35b59b098ebcf54ec5238cab7.i
+data/.git/objects/c2/a87a7a853df31e6a7905a6d1b6d6e2a7496290.i
+data/.vs/port_sel_web1/v14/.suo.i
+data/.git/objects/d1/e8e579ff1e02e35df294a830140ce2812c49ba.i
+data/.git/objects/29/0b50e5963df53eca781a62dbb6d4b1752cbfcc.i
+data/.git/objects/6c/3fdf766897381f1d897bd3e051ae506ba16bc9.i
+data/.git/objects/57/0c1d5e5076aa145da208ec3234c12bd4506599.i
+data/.git/objects/83/167c698a8f67948a816eff0043ccba6ac2af27.i
+data/.git/objects/af/c67a372d7ad30f59ea0085851c3dde20d6f804.i
+data/.git/objects/30/243fb79023ed5225aff0545b220cc278f832ac.i
+data/.git/objects/f5/6575be6da4e0eedac1b987d31f75552f9aeb06.i
+data/.git/objects/20/17c163f97563ea1197677375a4451a06f38aba.i
+data/.git/objects/a9/d8d21290267ecc1f37c2523c7dde76edf03d93.i
+data/.git/objects/33/1d858ce9b12fa6720414196a9dd6e0b6a0faaa.i
+data/.git/objects/31/6f21b3e146e0d6b7cafbbd260d3c91db5a452e.i
+data/.git/objects/fa/1ed97c890bb8d5cfbc5106e76228630a2b8938.i
+data/.git/objects/4d/91b3f2b234ba6f12fbb58891cfd0b321a5d928.i
+data/.git/objects/35/8960622af8033c1fa2c5fd15ad8e7e305680af.i
+data/.git/objects/0c/2f66e0bc48b029c9a82e4b38c1cb0a226a464a.i
+data/.git/logs/HEAD.i
+data/.git/objects/ec/edde4c72ef40a297e122c65cae5ca94471fff8.i
+data/.git/objects/e0/03df8a9795c7f6435d1cf9a7ffdf0240d4b72e.i
+data/.git/objects/6c/031deac48ebfbacf89bc91aa4a46aac7aab41e.i
+data/.git/objects/1c/679992cba676629efdce19b04415fda3aeaed3.i
+data/.git/objects/94/3e339b8287115834508d543b9abfdbc7b52125.i
+data/.git/hooks/applypatch-msg.sample.i
+data/.git/objects/91/32481d44f296738f019c2b2ec4bea62aa24f4f.i
+data/.git/objects/61/434174694f84b42e66c267cb0d83408c75d120.i
+data/.git/objects/03/5f9267b43e88500453110de75599670b8cc66a.i
+data/.git/objects/ce/af5cd39c00efc8cda0b57c1db123506e58ac49.i
+data/.git/objects/9e/5ab4c7b41d6968402092aa0bba63098b88809a.i
+data/.git/objects/5f/7212b388397c8f1a1d57e04b355ea9c66c666d.i
+data/.git/objects/69/5fa0090b15533dddc3ad46d2902f1e3562d0d2.i
+data/.git/objects/a9/d8d21290267ecc1f37c2523c7dde76edf03d93.d
+data/.git/objects/4b/513b45f16928b4c997eadaac05870c16b82cde.i

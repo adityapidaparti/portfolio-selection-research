@@ -13,6 +13,10 @@ rho = 0.1; % Augmentation term
 beta = 2; % Weight on L2 norm
 [num_stock num_days] = size(x);
 
+%Debugging
+results = [1 2 3 4 5 6; zeros(81,6)];
+index = 2;
+
 for eta = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on log
   for alpha = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on L1 norm (bigger alpha aka trade less frequently)
     fprintf('===================================================\n');
@@ -25,9 +29,6 @@ for eta = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on log
 
     % Portfolio for the first day
     weight(:, 1) = ones(num_stock,1) * (1/num_stock);
-
-    e = .1;
-    a = 0.000001;
     for t = 2:num_days
       fprintf('Day: %d, Wealth: %d \n', t, wealth(t-1) );
 
@@ -35,14 +36,17 @@ for eta = [1e-6 1e-5 1e-4 1e-3 1e-2 0.1 1 10 100] % Weight on log
       w = sparse_port_admm(weight(:,t-1), x(:,t-1), eta, beta, alpha, rho);
       weight(:,t) = w;
       wealth(t,1) = wealth(t-1,1)*(weight(:,t)'*x(:,t))-gamma*abs(wealth(t-1,1))*norm(weight(:,t-1)-weight(:,t),1);
-      % if t == 1120
-      %     plot(wealth((1:t),1));
-      %     error('stop');
-      %end
+
 
     end
-    wealth(num_days,1)
-    error('stop')
-    
+%     Debugging stuff (don't worry about)
+%     plot(wealth((1:t),1));
+%     pause;
+%     results(index,:) = [eta alpha gamma rho beta wealth(num_days,1)];
+%     index = index + 1
+%     if index == 50
+%         pause;
+%     end
+
   end % end alpha
 end % end eta
