@@ -1,1 +1,1 @@
-Finished debugging. Code works equally well in MATLAB and Python. Results are stored in Debugging.csv
+Added test code file, created algorithm to compute betas for all datasets

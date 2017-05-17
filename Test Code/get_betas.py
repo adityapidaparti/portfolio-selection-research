@@ -26,7 +26,6 @@ tse = {'datset':'../Data/tse.csv','start':'1994-01-04','end':'1998-12-31'}
 #Index used is the S&P500 data, which was pulled from Yahoo Finance
 idx_data = '../Data/idx_sp500.csv'
 
-
 def getBetas(data=nyse_o, beta_range = 180, idx_data=idx_data):
     #data is given in the dict format shown abov
     #idx_data is given as a string as shown above
