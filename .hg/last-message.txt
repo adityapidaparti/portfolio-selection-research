@@ -1,1 +1,1 @@
-Added test code file, created algorithm to compute betas for all datasets
+Created betas for nyse old dataset for various date ranges

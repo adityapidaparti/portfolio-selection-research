@@ -1,7 +1,8 @@
-import numpy as np
-import sparse_port_admm as spa
-import datasetup
 import pandas as pd
+import numpy as np
+from datasets import *
+from sparse_port_admm import *
+import matplotlib.pyplot as plt
 
 #This is our main function wrapper. It's going to perform setup for each
 #test we do. That is, once we run this function, our initial paramters have
@@ -15,3 +16,62 @@ import pandas as pd
 #transaction cost/gamma
 #risk tolerance/max_vol
 #beta window
+
+def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_betas_30.csv', \
+    eta = 0.05, alpha = 0.01, gamma = 0.0 ,maxRisk = 10 ** 10, debug = True):
+
+    #pricesData is the price relative matrix, a string to its location
+    #betasData is the beta dataset, a string to its location
+    #eta is learning rate (not varied, for now)
+    #alpha is L1 norm weight (not varied, for now)
+    #gamma is transaction cost
+    #maxRisk is max portfolio risk
+    #if debug is True, print statements will appear
+
+    r = .01 #Augmentation term
+    b = 2 #weight on L2 norm
+
+    #Data setup
+    prices = np.transpose(pd.read_csv(pricesData,sep=',',header=None).as_matrix())
+    betas = pd.read_csv(betasData,delimiter=',',index_col=0).as_matrix()
+
+    #Variable initialization
+    (num_stock, num_days) = prices.shape
+    weight = np.zeros(prices.shape)
+    wealth = np.zeros((num_days, 1))
+    wealth[0,0] = 1 # Start with 1 dollar on day 1
+
+    #portfolio for 1st day, allocate wealth equally across assets
+    weight[0:, 0] = np.ones(num_stock) * (1/num_stock)
+
+    #2nd through last day
+    for day in range(1, num_days):
+        print("Day %d, Wealth: %f" % (day, wealth[day-1,0]))
+
+        prev_day_weight = weight[:, day-1]
+        prev_day_data = prices[:, day-1]
+
+        w = sparse_port_admm(prev_day_weight, prev_day_data, eta, b, alpha, r)
+
+        weight[:, day] = w
+        new_wealth = wealth[day-1, 0] * np.dot(weight[:, day], prices[:, day])
+
+        #Apply transaction cost. Zero for a gamma of 0.0
+        transaction_cost = gamma*abs(wealth[day-1, 0])*np.linalg.norm(weight[:,day-1]-weight[:,day],1)
+        wealth[day, 0] = new_wealth - transaction_cost
+
+    plt.plot(wealth[0:day])
+    plt.show()
+    return [eta, alpha, gamma, r, b, wealth[num_days -1, 0]]
+
+
+results = np.zeros((83,6))
+index = 0
+results[index] = [1,2,3,4,5,6]
+index += 1
+for h in range(-6,3): #h is eta, which is weight on log
+    for a in range(-6,3): #a is alpha, which is weight on L1 norm
+        results[index] = lazy_updates_admm(eta = 10.0**h, alpha = 10.0**a)
+        index += 1
+        print ("Current index:", index)
+np.savetxt('debug_python.csv', results)
