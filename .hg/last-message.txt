@@ -1,1 +1,1 @@
-Created betas for nyse old dataset for various date ranges
+Finished Lazy updatestesting suite. Next step is to implement betas
