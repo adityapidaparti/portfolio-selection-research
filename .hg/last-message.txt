@@ -1,1 +1,1 @@
-Finished Lazy updatestesting suite. Next step is to implement betas
+Redid beta calculations as there are only 252 trading days in a calendar year
