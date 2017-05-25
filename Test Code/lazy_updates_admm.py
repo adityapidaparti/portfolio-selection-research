@@ -3,6 +3,7 @@ import numpy as np
 from datasets import *
 from sparse_port_admm import *
 import matplotlib.pyplot as plt
+import pdb
 
 #This is our main function wrapper. It's going to perform setup for each
 #test we do. That is, once we run this function, our initial paramters have
@@ -10,23 +11,17 @@ import matplotlib.pyplot as plt
 #It's going to come in the form of a function return results in the form of
 # a pandas dataframe and a dictionary with all the parameters
 
-#Parameters we'll be varying:
-#learning rate/eta: logarithmic increase from 10 ^ -6 to 10^2
-#l1 norm weight/alpha
-#transaction cost/gamma
-#risk tolerance/max_vol
-#beta window
+#pricesData is the price relative matrix, a string to its location
+#betasData is the beta dataset, a string to its location
+#eta is learning rate (not varied, for now)
+#alpha is L1 norm weight
+#gamma is transaction cost
+#maxRisk is max portfolio risk
+#modes is either in reject or project
+#if debug is True, print statements will appear
 
-def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_betas_30.csv', \
-    eta = 0.05, alpha = 0.01, gamma = 0.0 ,maxRisk = 10 ** 10, debug = True):
-
-    #pricesData is the price relative matrix, a string to its location
-    #betasData is the beta dataset, a string to its location
-    #eta is learning rate (not varied, for now)
-    #alpha is L1 norm weight (not varied, for now)
-    #gamma is transaction cost
-    #maxRisk is max portfolio risk
-    #if debug is True, print statements will appear
+def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_betas_21.csv', \
+    eta = 0.05, alpha = 0.01, gamma = 0.0 ,maxRisk = 10 ** 10, mode = "reject", debug = True):
 
     r = .01 #Augmentation term
     b = 2 #weight on L2 norm
@@ -51,7 +46,16 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
         prev_day_weight = weight[:, day-1]
         prev_day_data = prices[:, day-1]
 
-        w = sparse_port_admm(prev_day_weight, prev_day_data, eta, b, alpha, r)
+        if mode == "reject":
+            # pdb.set_trace()
+            dayBetas = betas[day]
+            temp = sparse_port_admm(prev_day_weight, prev_day_data, eta, b, alpha, r, dayBetas)
+            portfolioRisk = np.dot(dayBetas, temp)
+            #In reject mode, do no
+            if portfolioRisk <= maxRisk:
+                w = temp
+            else:
+                w = prev_day_weight
 
         weight[:, day] = w
         new_wealth = wealth[day-1, 0] * np.dot(weight[:, day], prices[:, day])
@@ -63,7 +67,6 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
     plt.plot(wealth[0:day])
     plt.show()
     return [eta, alpha, gamma, r, b, wealth[num_days -1, 0]]
-
 
 results = np.zeros((83,6))
 index = 0

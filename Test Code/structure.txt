@@ -14,14 +14,14 @@ Situations to test:
 -Vary risk tolerance (known as the beta, but as it's used, I will use vol to measure it as volatility)
 
 Steps: (do for NYSE and S&P 500 datasets)
-1a. Obtain data (price relatives and betas for each day)
+-1a. Obtain data (price relatives and betas for each day)
 1b. Setup testing suite. Develop Lazy and Sparse w/ parameters to include betas.
 2. Observe the risk variation without any parameters (implement computing the stock beta)
 3. Using a good learning rate and l1 norm, with no transaction cost, observe portfolio return as a function.
 4. Test the following algorithm methods:
   -If a portfolio's beta is too large, reject the portfolio
   -Weight each stock to make riskier stocks worth more costly in the cost function.
-  -Run the previous experiment, when portfolio beta is too large, square all betas to re-emphasize less risky stocks
+    -when portfolio beta is too large, square all betas to re-emphasize less risky stocks
 5. Find good parameters to run the larger simulation
   -Ranges of learning rate, transaction cost, L1 norm, and risk
 6. Do a nested for loop 4 levels deep. Test and save results
@@ -36,8 +36,13 @@ recompute with the inherent volatilities squared to emphasize
 less volatile stocks over more volatile stocks
 
 
-Steps for obtaining beta:
-0. Look into finding data for 1 year earlier on NYSE datasets
-1. Calculate betas for 30, 60, 90, 180, 360 days
-2. Calculate differences in return between using starting to apply beta ASAP or starting data analysis 1 year later.
-3. Pick best method.
+Steps to optimize stocks
+-If current portfolio suggestion is over maximum risk
+-Project onto L1 ball
+-Project onto simplex (use find_y function as a model)
+-Alternate between the previous two until a portfolio is found within the feasible set
+
+Notes: Use Proximal Algorithms by Parikh and Boyd, sections 6.3.2 and 6.5.2.
+-For 6.5.2, lambda is the size of the l1 ball
+-For 6.3.2, a is the betas
+-For 6.3.2, ()_+ corresponds to finding the maximum or zero, whichever is larger.
