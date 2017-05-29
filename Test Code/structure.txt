@@ -44,5 +44,5 @@ Steps to optimize stocks
 
 Notes: Use Proximal Algorithms by Parikh and Boyd, sections 6.3.2 and 6.5.2.
 -For 6.5.2, lambda is the size of the l1 ball
--For 6.3.2, a is the betas
+-For 6.3.2, a is the betas, v is portfolio
 -For 6.3.2, ()_+ corresponds to finding the maximum or zero, whichever is larger.

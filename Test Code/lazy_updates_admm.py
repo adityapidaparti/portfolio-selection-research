@@ -22,7 +22,6 @@ import pdb
 
 def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_betas_21.csv', \
     eta = 0.05, alpha = 0.01, gamma = 0.0 ,maxRisk = 10 ** 10, mode = "reject", debug = True):
-
     r = .01 #Augmentation term
     b = 2 #weight on L2 norm
 
@@ -41,7 +40,7 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
 
     #2nd through last day
     for day in range(1, num_days):
-        print("Day %d, Wealth: %f" % (day, wealth[day-1,0]))
+        # print("Day %d, Wealth: %f" % (day, wealth[day-1,0]))
 
         prev_day_weight = weight[:, day-1]
         prev_day_data = prices[:, day-1]
@@ -52,7 +51,9 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
             temp = sparse_port_admm(prev_day_weight, prev_day_data, eta, b, alpha, r, dayBetas)
             portfolioRisk = np.dot(dayBetas, temp)
             #In reject mode, do no
+            # print ("Portfolio risk: %f, maxRisk: %f, eta: %f, alpha: %f" % (portfolioRisk, maxRisk, eta, alpha))
             if portfolioRisk <= maxRisk:
+                print (portfolioRisk, maxRisk)
                 w = temp
             else:
                 w = prev_day_weight
@@ -65,16 +66,19 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
         wealth[day, 0] = new_wealth - transaction_cost
 
     plt.plot(wealth[0:day])
+    title = "maxRisk: %f, eta: %f, alpha: %f" % (maxRisk, eta, alpha)
+    plt.title(title)
     plt.show()
-    return [eta, alpha, gamma, r, b, wealth[num_days -1, 0]]
+    return [eta, alpha, gamma, r, b, maxRisk, wealth[num_days-1, 0]]
 
-results = np.zeros((83,6))
-index = 0
-results[index] = [1,2,3,4,5,6]
-index += 1
-for h in range(-6,3): #h is eta, which is weight on log
-    for a in range(-6,3): #a is alpha, which is weight on L1 norm
-        results[index] = lazy_updates_admm(eta = 10.0**h, alpha = 10.0**a)
-        index += 1
-        print ("Current index:", index)
-np.savetxt('debug_python.csv', results)
+#testing/debugging
+# results = np.zeros((83,6))
+# index = 0
+# results[index] = [1,2,3,4,5,6]
+# index += 1
+# for h in range(-6,3): #h is eta, which is weight on log
+#     for a in range(-6,3): #a is alpha, which is weight on L1 norm
+#         results[index] = lazy_updates_admm(eta = 10.0**h, alpha = 10.0**a)
+#         index += 1
+#         print ("Current index:", index)
+# np.savetxt('debug_python.csv', results)

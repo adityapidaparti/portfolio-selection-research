@@ -1,1 +1,1 @@
-Redid beta calculations as there are only 252 trading days in a calendar year
+Added reject criteria and structure for modify criteria
