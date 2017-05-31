@@ -1,1 +1,1 @@
-Added reject criteria and structure for modify criteria
+Finished first testing suite

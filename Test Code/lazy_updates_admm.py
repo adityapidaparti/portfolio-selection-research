@@ -21,7 +21,7 @@ import pdb
 #if debug is True, print statements will appear
 
 def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_betas_21.csv', \
-    eta = 0.05, alpha = 0.01, gamma = 0.0 ,maxRisk = 10 ** 10, mode = "reject", debug = True):
+    eta = 0.05, alpha = 0.01, gamma = 0.0 ,maxRisk = 10 ** 10, mode = "reject", debug = False):
     r = .01 #Augmentation term
     b = 2 #weight on L2 norm
 
@@ -50,8 +50,8 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
             dayBetas = betas[day]
             temp = sparse_port_admm(prev_day_weight, prev_day_data, eta, b, alpha, r, dayBetas)
             portfolioRisk = np.dot(dayBetas, temp)
-            #In reject mode, do no
-            # print ("Portfolio risk: %f, maxRisk: %f, eta: %f, alpha: %f" % (portfolioRisk, maxRisk, eta, alpha))
+
+            #reject too risky of portfolios in reject mode
             if portfolioRisk <= maxRisk:
                 print (portfolioRisk, maxRisk)
                 w = temp
@@ -65,11 +65,12 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
         transaction_cost = gamma*abs(wealth[day-1, 0])*np.linalg.norm(weight[:,day-1]-weight[:,day],1)
         wealth[day, 0] = new_wealth - transaction_cost
 
-    plt.plot(wealth[0:day])
-    title = "maxRisk: %f, eta: %f, alpha: %f" % (maxRisk, eta, alpha)
-    plt.title(title)
-    plt.show()
-    return [eta, alpha, gamma, r, b, maxRisk, wealth[num_days-1, 0]]
+    if debug:
+        plt.plot(wealth[0:day])
+        title = "maxRisk: %f, eta: %f, alpha: %f" % (maxRisk, eta, alpha)
+        plt.title(title)
+        plt.show()
+    return wealth[num_days-1, 0]
 
 #testing/debugging
 # results = np.zeros((83,6))
