@@ -42,7 +42,10 @@ def testOne(startpt = 0,mode='reject'):
 
                             results[savept] = [eta, alpha, gamma, beta_range, maxRisk, wealth]
                             savept = savept + 1
+                            index = index + 1
                             if savept == 100: #Save results for all gammas and beta_ranges for given maxRisk, eta, and alpha
                                 results = pd.DataFrame(results)
-                                results.to_csv('./Results/'+str(maxRisk)+"_"+str(eta)+"_"+str(alpha)"_"+str(gamma)"_"+str(beta_range)"_"+'.csv')
+                                results.to_csv('./Results/'+str(maxRisk)+"_"+str(eta)+"_"+str(alpha)+"_"+str(gamma)+"_"+str(beta_range)+"_"+'.csv')
+                        else:
+                            index = index + 1
 testOne()
