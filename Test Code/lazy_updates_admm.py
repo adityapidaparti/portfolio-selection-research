@@ -53,7 +53,7 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
 
             #reject too risky of portfolios in reject mode
             if portfolioRisk <= maxRisk:
-                print (portfolioRisk, maxRisk)
+                # print (portfolioRisk, maxRisk)
                 w = temp
             else:
                 w = prev_day_weight
