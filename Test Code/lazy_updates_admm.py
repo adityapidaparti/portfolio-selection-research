@@ -40,7 +40,7 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
 
     #2nd through last day
     for day in range(1, num_days):
-        # print("Day %d, Wealth: %f" % (day, wealth[day-1,0]))
+        print("Day %d, Wealth: %f" % (day, wealth[day-1,0]))
 
         prev_day_weight = weight[:, day-1]
         prev_day_data = prices[:, day-1]
