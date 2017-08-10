@@ -24,9 +24,9 @@ def testOne(startpt,mode='reject'):
     maxRisks = [x/10 for x in range(6,16)] #Range: .6 to 1.5, num_iters: 10
 
 
-
+    num_tests = 100
     dimension = (len(maxRisks)*len(etas)*len(alphas)*len(gammas)*len(beta_ranges))
-    results = np.zeros((20,6))
+    results = np.zeros((num_tests,6))
 
     index = 0
     savept = 0
@@ -44,8 +44,10 @@ def testOne(startpt,mode='reject'):
                             results[savept] = [eta, alpha, gamma, beta_range, maxRisk, wealth]
                             savept = savept + 1
                             index = index + 1
-                            if savept == 100: #Save results for all gammas and beta_ranges for given maxRisk, eta, and alpha
+                            if savept == num_tests: #Save results for all gammas and beta_ranges for given maxRisk, eta, and alpha
                                 results = pd.DataFrame(results)
+                                results.describe()
+                                raise ValueError
                                 results.to_csv('./Results/'+"_"+str(beta_range)+"_"+str(gamma)+"_"+str(alpha)+'.csv')
                                 return
                         else:
