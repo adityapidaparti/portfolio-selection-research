@@ -47,7 +47,6 @@ def testOne(startpt,mode='reject'):
                             if savept == num_tests: #Save results for all gammas and beta_ranges for given maxRisk, eta, and alpha
                                 results = pd.DataFrame(results)
                                 results.describe()
-                                raise ValueError
                                 results.to_csv('./Results/'+"_"+str(beta_range)+"_"+str(gamma)+"_"+str(alpha)+'.csv')
                                 return
                         else:
