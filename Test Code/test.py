@@ -46,8 +46,7 @@ def testOne(startpt,mode='reject'):
                             index = index + 1
                             if savept == num_tests: #Save results for all gammas and beta_ranges for given maxRisk, eta, and alpha
                                 results = pd.DataFrame(results)
-                                results.describe()
-                                results.to_csv('./Results/'+"_"+str(beta_range)+"_"+str(gamma)+"_"+str(alpha)+'.csv')
+                                results.to_csv('./Results/'+str(startpt)+"_"+str(beta_range)+"_"+str(gamma)+"_"+str(alpha)+'.csv')
                                 return
                         else:
                             index = index + 1
