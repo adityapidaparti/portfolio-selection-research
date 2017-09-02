@@ -14,7 +14,7 @@ Situations to test:
 -Vary risk tolerance (known as the beta, but as it's used, I will use vol to measure it as volatility)
 
 Steps: (do for NYSE and S&P 500 datasets)
--1a. Obtain data (price relatives and betas for each day)
+1a. Obtain data (price relatives and betas for each day)
 1b. Setup testing suite. Develop Lazy and Sparse w/ parameters to include betas.
 2. Observe the risk variation without any parameters (implement computing the stock beta)
 3. Using a good learning rate and l1 norm, with no transaction cost, observe portfolio return as a function.

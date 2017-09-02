@@ -12,8 +12,7 @@ beta_ranges = [21, 42, 63, 126, 252]
 def computeBetas():
     for beta_range in beta_ranges:
         betas = getBetas(beta_range = beta_range)
-        name = "../Data/nyse-o_betas_" + str(beta_range) + ".csv"
-
+        name = "../Data/nyse-o_betas_" + str(beta_range) + ".csv"\
         betas.to_csv(name)
 
 def computeExtremaBetas():
@@ -33,5 +32,3 @@ def computeExtremaBetas():
                     currMin = val
         results.append((currMin, currMax))
     print (results)
-
-computeExtremaBetas()

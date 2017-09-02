@@ -71,15 +71,3 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
         plt.title(title)
         plt.show()
     return wealth[num_days-1, 0]
-
-#testing/debugging
-# results = np.zeros((83,6))
-# index = 0
-# results[index] = [1,2,3,4,5,6]
-# index += 1
-# for h in range(-6,3): #h is eta, which is weight on log
-#     for a in range(-6,3): #a is alpha, which is weight on L1 norm
-#         results[index] = lazy_updates_admm(eta = 10.0**h, alpha = 10.0**a)
-#         index += 1
-#         print ("Current index:", index)
-# np.savetxt('debug_python.csv', results)

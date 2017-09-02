@@ -1,6 +1,9 @@
 from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
+import os.path
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 from datasets import *
 
 def getBetas(data=nyse_o, beta_range = 180, idx_data=idx_data):
