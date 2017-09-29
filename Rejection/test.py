@@ -24,7 +24,7 @@ def testOne(startpt,mode='reject'):
     maxRisks = [x/10 for x in range(6,16)] #Range: .6 to 1.5, num_iters: 10
 
 
-    num_tests = 10
+    num_tests = 100
     dimension = (len(maxRisks)*len(etas)*len(alphas)*len(gammas)*len(beta_ranges))
     results = np.zeros((num_tests,6))
 
