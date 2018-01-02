@@ -17,7 +17,7 @@ from supporting_funcs import find_y, shrinkage
 
 def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho, betas, debug = False):
 
-    #Parameters
+    #Inputs
     QUIET    = 1
     MAX_ITER = 1000 #Default 1000
     ABSTOL   = .0001 #Default .0001
