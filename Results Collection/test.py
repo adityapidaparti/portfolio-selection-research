@@ -12,7 +12,7 @@ import sys
 # risk tolerance (maxRisk)
 # beta window (beta_range)
 
-def testOne(startpt ,mode='reject'):
+def testOne(startpt, mode='reject'):
     beta_ranges = [21, 42, 63, 126, 252]
     gammas = [0.0, 0.001, 0.0025, 0.005, 0.01]
     alphas = [x/20 for x in range(1,9)] # Range: .05 to 0.4, 8 iterations
