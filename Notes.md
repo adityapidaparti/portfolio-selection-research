@@ -25,7 +25,14 @@
 * For 6.3.2, ()_+ corresponds to finding the maximum or zero, whichever is larger.
 
 ## Parameters
-* Vary learning rate (eta)
-* Vary transaction cost (gamma)
-* Vary L1 norm weight (alpha)
-* Vary risk tolerance (known as the beta, but as it's used, I will use vol to measure it as volatility)
+* learning rate (eta)
+* transaction cost (gamma)
+* L1 norm weight (alpha)
+* risk tolerance (beta).
+
+For the NYSE dataset, this corresponds to
+* alphas: 0 - 0.4
+* eta: 0 - 1.5
+* betas: 0.75 - 1.25 (to start with)
+* gammas: 0, 0.001, 0.0025, 
+and etas in the range of 0 to 1.5.

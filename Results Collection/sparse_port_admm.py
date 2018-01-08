@@ -15,7 +15,7 @@ import numpy as np
 from numpy import linalg as la
 from supporting_funcs import find_y, shrinkage
 
-def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho, betas, debug = False):
+def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho, debug = False):
 
     #Parameters
     QUIET    = 1
@@ -29,10 +29,6 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho, betas, debug = False):
 
     #equal to the sum of each weight multiplied by its price relative
     const = np.dot(w_t, x_t)
-
-    #debugging
-    count = 0
-    fin = -1
 
     for k in range(MAX_ITER):
         #iterating through 3 sub problems until convergence or max iterations
