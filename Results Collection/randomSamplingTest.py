@@ -39,4 +39,4 @@ def randomSamplingNYSE(num_tests=100, mode='reject', debug=False):
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     results.to_csv("../Results (reject)/" + str(num_tests) + "_" + time)
 
-# randomSamplingNYSE(1, debug=True)
+randomSamplingNYSE()
