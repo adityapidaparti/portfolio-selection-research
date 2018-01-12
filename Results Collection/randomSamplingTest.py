@@ -29,13 +29,14 @@ def randomSampleNYSE(mode, debug=False):
     maxRisk = max_risk, mode = mode, debug=debug)
     return [beta_range, alpha, gamma, eta, max_risk, wealth[5650, 0]]
 
-def randomSamplingNYSE(num_tests=10, mode='reject', debug=False):
+def randomSamplingNYSE(num_tests=100, mode='reject', debug=False):
     results = np.zeros((num_tests, 6))
     for i in range(num_tests):
         results[i] = randomSampleNYSE(mode, debug)
 
     results = pd.DataFrame(results)
+    results.columns = ['Beta Range', 'Alpha', 'Gamma', 'Eta', 'Max Risk', 'Wealth']
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    results.to_csv("./Rejection Results/"+ "data " + time)
+    results.to_csv("../Results (reject)/" + str(num_tests) + "_" + time)
 
-randomSamplingNYSE()
+# randomSamplingNYSE(1, debug=True)
