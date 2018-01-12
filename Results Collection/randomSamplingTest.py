@@ -37,6 +37,6 @@ def randomSamplingNYSE(num_tests=100, mode='reject', debug=False):
     results = pd.DataFrame(results)
     results.columns = ['Beta Range', 'Alpha', 'Gamma', 'Eta', 'Max Risk', 'Wealth']
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    results.to_csv("../Results (reject)/" + str(num_tests) + "_" + time)
+    results.to_csv("../Data (reject)/" + str(num_tests) + "_" + time)
 
 randomSamplingNYSE()
