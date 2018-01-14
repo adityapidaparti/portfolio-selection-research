@@ -50,7 +50,7 @@ def sparse_port_admm(w_t, x_t, eta, beta, gamma, rho, debug = False):
 
         #Computing primal and dual residual
         #Stopping criteria/convergence
-        r_norm = la.norm(w - w_t - z) #shoud we replace this with u?
+        r_norm = la.norm(w - w_t - z)
         s_norm = la.norm(-rho* (z - z_old));
 
         eps_pri = (n**.5) * ABSTOL + RELTOL * max(la.norm(w), la.norm(-w_t), la.norm(-z))
