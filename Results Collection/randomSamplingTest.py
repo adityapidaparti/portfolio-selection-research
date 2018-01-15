@@ -12,7 +12,7 @@ ETAS = [x/10. for x in range(0,16,)]
 MAX_RISKS = [x/20. for x in range(10,30)]
 
 # Make modular for S&P500 dataset
-def randomSampleNYSE(mode, debug=False):
+def randomSampleNYSE(mode, debug):
     if debug:
         random.seed(0)  # use to get consistent results when testing.
     beta_range = random.choice(BETA_RANGES)
@@ -39,7 +39,7 @@ def randomSamplingNYSE(num_tests=100, mode='reject', debug=False):
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     results.to_csv("../Rejection/" + str(num_tests) + "_" + time)
 
-def randomSampleNYSEComparison(mode, debug=False):
+def randomSampleNYSEComparison(mode, debug):
     result = randomSampleNYSE(mode, debug)
     beta_data = "../Data/nyse-o_betas_" + str(result[0]) + ".csv"
     alpha = result[1]
