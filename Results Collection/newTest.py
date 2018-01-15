@@ -1,3 +1,4 @@
-from randomSamplingTest import randomSamplingNYSE
+import randomSamplingTest as rst
 
-randomSamplingNYSE()
+# randomSamplingNYSE()
+rst.randomSampleNYSEComparison()

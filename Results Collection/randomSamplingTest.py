@@ -39,4 +39,26 @@ def randomSamplingNYSE(num_tests=100, mode='reject', debug=False):
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     results.to_csv("../Rejection/" + str(num_tests) + "_" + time)
 
-randomSamplingNYSE()
+def randomSampleNYSEComparison(mode, debug=False):
+    result = randomSampleNYSE(mode, debug)
+    beta_data = "../Data/nyse-o_betas_" + str(result[0]) + ".csv"
+    alpha = result[1]
+    gamma = result[2]
+    eta = result[3]
+    no_risk_limit_wealth = lua(betasData=beta_data,
+                                eta=eta, alpha=alpha,gamma=gamma)
+    result.append(no_risk_limit_wealth)
+    return result
+
+def randomSamplingNYSEComparison(num_tests=100, mode='reject', debug=False):
+    results = np.zeros((num_tests, 7))
+    for i in range(num_tests):
+        results[i] = randomSampleNYSEComparison(mode, debug)
+
+
+    results = pd.DataFrame(results)
+    results.columns = ['Beta Range', 'Alpha', 'Gamma', 'Eta', 'Max Risk', 'Wealth']
+    time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    results.to_csv("../Rejection/Comparison_" + str(num_tests) + "_" + time)
+
+# randomSamplingNYSEComparison(1,debug=True)
