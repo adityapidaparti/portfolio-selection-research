@@ -75,11 +75,11 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
 
         portfolioBetas[day,0] = portfolioRisk
 
-    if debug:
-        plt.plot(portfolioBetas[0:day])
-        title = "Risk over time \nmaxRisk: %f, eta: %f, alpha: %f" % (maxRisk, eta, alpha)
-        plt.title(title)
-        plt.show()
+    # if debug:
+    #     plt.plot(portfolioBetas[0:day])
+    #     title = "Risk over time \nmaxRisk: %f, eta: %f, alpha: %f" % (maxRisk, eta, alpha)
+    #     plt.title(title)
+        # plt.show()
 
     #to get most relevant values, access np.amax(portfolioBetas and wealth[5650, 0]
     return (portfolioBetas, wealth)

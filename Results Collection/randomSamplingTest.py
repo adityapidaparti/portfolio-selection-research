@@ -12,7 +12,7 @@ ETAS = [x/10. for x in range(0,16,)]
 MAX_RISKS = [x/20. for x in range(10,30)]
 
 # Make modular for S&P500 dataset
-def randomSampleNYSE(mode, debug):
+def randomSampleNYSE(mode, debug, compare):
     if debug:
         random.seed(0)  # use to get consistent results when testing.
     beta_range = random.choice(BETA_RANGES)
@@ -25,19 +25,34 @@ def randomSampleNYSE(mode, debug):
     print("beta_range: %d, gamma: %f, alpha: %f, eta: %f,max_risk: %f" %
         (beta_range, gamma, alpha, eta, max_risk))
 
+    #Run with risk
     (portBetas, wealth) = lua(betasData=beta_data, eta=eta,alpha = alpha, gamma = gamma,
     maxRisk = max_risk, mode = mode, debug=debug)
-    return [beta_range, alpha, gamma, eta, max_risk, wealth[5650, 0]]
 
-def randomSamplingNYSE(num_tests=100, mode='reject', debug=False):
-    results = np.zeros((num_tests, 6))
+    #If we want to compare, run same parameters with no risk parameter
+    if compare:
+        (noRiskBetas, noRiskWealth) = lua(betasData=beta_data,eta=eta,alpha=alpha, gamma=gamma,
+        maxRisk = 10 ** 10, mode=mode, debug=debug)
+        return [beta_range, alpha, gamma, eta, max_risk, wealth[5650, 0], noRiskWealth[5650,0]]
+    else:
+        return [beta_range, alpha, gamma, eta, max_risk, wealth[5650, 0], float('Nan')]
+
+#Random sampling
+def testNYSE(num_tests=100, mode='reject', debug=False, compare=False):
+    results = np.zeros((num_tests, 7))
+
+    # import pdb;pdb.set_trace()
     for i in range(num_tests):
-        results[i] = randomSampleNYSE(mode, debug)
+        result = randomSampleNYSE(mode, debug, compare)
+        results[i] = result
 
     results = pd.DataFrame(results)
-    results.columns = ['Beta Range', 'Alpha', 'Gamma', 'Eta', 'Max Risk', 'Wealth']
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    results.to_csv("../Rejection/" + str(num_tests) + "_" + time)
+
+    results.columns = ['Beta Range', 'Alpha', 'Gamma', 'Eta', 'Max Risk', 'Wealth', 'No Risk Wealth']
+    results.to_csv("../Rejection/Compare_" + str(num_tests) + "_" + time)
+
+
 
 def randomSampleNYSEComparison(mode, debug):
     result = randomSampleNYSE(mode, debug)
@@ -53,7 +68,8 @@ def randomSampleNYSEComparison(mode, debug):
 def randomSamplingNYSEComparison(num_tests=100, mode='reject', debug=False):
     results = np.zeros((num_tests, 7))
     for i in range(num_tests):
-        results[i] = randomSampleNYSEComparison(mode, debug)
+        a = randomSampleNYSEComparison(mode, debug)
+        results[i] = a
 
 
     results = pd.DataFrame(results)
