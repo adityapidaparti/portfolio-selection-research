@@ -1,4 +1,4 @@
 import randomSamplingTest as rst
 
 # randomSamplingNYSE()
-rst.testNYSE(num_tests=1,debug=False, compare=True)
+rst.testNYSE(num_tests=100,debug=False, compare=True)
