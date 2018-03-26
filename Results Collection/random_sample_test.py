@@ -77,4 +77,4 @@ def randomSamplingNYSEComparison(num_tests=100, mode='reject', debug=False):
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     results.to_csv("../Rejection/Comparison_" + str(num_tests) + "_" + time)
 
-# randomSamplingNYSEComparison(1,debug=True)
+randomSamplingNYSEComparison(1,debug=True)
