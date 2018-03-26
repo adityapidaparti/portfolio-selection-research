@@ -30,7 +30,6 @@ def getBetas(data=nyse_o, beta_range = 180, idx_data=idx_data):
     betas = pd.DataFrame()
 
     for col in data.columns:
-        print (col)
         temp = idx.copy()
         temp.reset_index(drop=True,inplace=True)
         temp["Stock"] = data[col]

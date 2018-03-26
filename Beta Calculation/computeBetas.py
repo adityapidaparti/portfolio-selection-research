@@ -1,20 +1,11 @@
 import numpy as np
 import pandas as pd
 from get_betas import *
+from coarse_hyperparameters import BETA_RANGES
+from datasets import *
 
-#Only purpose of this file is to generate data, so it's written as a script
-#not a function.
-
-#beta date ranges to test
-#These ranges are the number of trading days in
-#1, 2, 3, 6, and 12 months
-beta_ranges = [21, 42, 63, 126, 252]
-def computeBetas():
-    for beta_range in beta_ranges:
-        betas = getBetas(beta_range = beta_range)
-        name = "../Data/nyse-o_betas_" + str(beta_range) + ".csv"\
-        betas.to_csv(name)
-
+# Computes the maximum and minimum beta.
+# Used and useful for debugging.
 def computeExtremaBetas():
     results = []
     for beta_range in beta_ranges:
@@ -32,3 +23,13 @@ def computeExtremaBetas():
                     currMin = val
         results.append((currMin, currMax))
     print (results)
+
+# Finds the betas for all days given a dataset of stock performance and 
+def computeBetas(data, output_filename):
+    for beta_range in BETA_RANGES:
+        betas = getBetas(data, beta_range)
+        betas.to_csv("../Data/" + output_filename + '_betas_' + 
+            str(beta_range) + '.csv')
+
+if __name__ == "__main__":
+    computeBetas(sp500, 'sp500')
