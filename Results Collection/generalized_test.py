@@ -92,8 +92,9 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 	(no_risk_betas, no_risk_wealth) = lua(dataset_file, betas_file, \
 		eta, alpha, gamma, float("inf"), mode, debug)
 
+	last_day = risk_limit_wealth.shape[0] - 1
 	return [beta_window, alpha, gamma, eta, max_risk, \
-	risk_limit_wealth[5650,0], no_risk_wealth[5650,0]]
+	risk_limit_wealth[last_day,0], no_risk_wealth[last_day,0]]
 
 if __name__ == '__main__':
 	randomSampling(num_tests=100, debug=True)
