@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sparse_port_admm import sparse_port_admm as spa
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # This is our main function wrapper. It's going to perform setup for each
 # test we do. That is, once we run this function, our initial paramters have
