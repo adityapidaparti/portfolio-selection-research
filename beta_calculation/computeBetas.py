@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from get_betas import *
-from coarse_hyperparameters import BETA_RANGES
+from constants import BETA_RANGES
 from datasets import *
 
 # Computes the maximum and minimum beta.
