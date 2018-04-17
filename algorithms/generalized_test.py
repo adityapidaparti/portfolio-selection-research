@@ -6,6 +6,7 @@ from datetime import datetime
 import sys
 sys.path.append("..")
 import constants
+import pathlib
 
 """
 These are hyperameters to be set. Random samples will be taken form these
@@ -53,8 +54,9 @@ def randomSampling(num_tests=100, mode='reject', dataset='nyse-o', \
 	'Wealth', 'No Risk Wealth']
 
 	time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-	filename = "../rejection/compare_" + str(num_tests) + "/" + time
-	results.to_csv(filename)
+	file_directory = "../rejection/" + dataset + "/compare_" + str(num_tests)
+	pathlib.Path(file_directory).mkdir(parents=True, exist_ok=True)
+	results.to_csv(file_directory + "/" + time)
 
 """
 Runs a single random test. Fairly coupled as the parameters are hardcoded above
@@ -97,4 +99,4 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 	risk_limit_wealth[last_day,0], no_risk_wealth[last_day,0]]
 
 if __name__ == '__main__':
-	randomSampling(num_tests=100, debug=True)
+	randomSampling(num_tests=100, debug=True, dataset='nyse-o')
