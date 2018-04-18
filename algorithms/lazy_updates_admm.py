@@ -44,6 +44,8 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
     portfolioBetas[0,0] = np.dot(betas[0], weight[0:,0])
 
     #2nd through last day
+    if debug:
+        num_days = 5
     for day in range(1, num_days):
 
         if (debug):

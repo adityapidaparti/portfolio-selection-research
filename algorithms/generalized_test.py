@@ -4,10 +4,12 @@ import random
 from lazy_updates_admm import lazy_updates_admm as lua
 from datetime import datetime
 import sys
+import os
+import pathlib
+scriptPath = os.path.realpath(os.path.dirname(sys.argv[0]))
+os.chdir(scriptPath)
 sys.path.append("..")
 import constants
-import pathlib
-
 """
 These are hyperameters to be set. Random samples will be taken form these
 values. Their default values are specified in constants.py.
@@ -99,4 +101,4 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 	risk_limit_wealth[last_day,0], no_risk_wealth[last_day,0]]
 
 if __name__ == '__main__':
-	randomSampling(num_tests=100, debug=True, dataset='nyse-o')
+	randomSampling(num_tests=2, debug=True, dataset='nyse-o')
