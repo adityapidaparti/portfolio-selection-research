@@ -43,8 +43,6 @@ def randomSampling(num_tests=100, mode='reject', dataset='nyse-o', \
 		hyperparameters = constants.nyse_o_hyperparameters
 	elif dataset == 'sp500' and not hyperparameters:
 		hyperparameters = constants.sp500_hyperparameters
-	else:
-		raise NotImplementedError()
 	
 	results = np.zeros((num_tests, 7))
 	for i in range(num_tests):
