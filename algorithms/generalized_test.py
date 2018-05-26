@@ -23,7 +23,7 @@ more insight.
 # ETAS = [x/10. for x in range(0,16,)]
 # MAX_RISKS = [x/20. for x in range(10,30)]
 
-""" 
+"""
 Top level function that executes a generalized testing suite of cascading
 functions.
 
@@ -43,7 +43,7 @@ def randomSampling(num_tests=100, mode='reject', dataset='nyse-o', \
 		hyperparameters = constants.nyse_o_hyperparameters
 	elif dataset == 'sp500' and not hyperparameters:
 		hyperparameters = constants.sp500_hyperparameters
-	
+
 	results = np.zeros((num_tests, 7))
 	for i in range(num_tests):
 		result = singleRandomtest(mode, dataset, hyperparameters, debug)
@@ -56,16 +56,16 @@ def randomSampling(num_tests=100, mode='reject', dataset='nyse-o', \
 	time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 	file_directory = "../rejection/" + dataset + "/compare_" + str(num_tests)
 	pathlib.Path(file_directory).mkdir(parents=True, exist_ok=True)
-	results.to_csv(file_directory + "/" + time)
+	results.to_csv(file_directory + "/" + time + ".csv")
 
 """
 Runs a single random test. Fairly coupled as the parameters are hardcoded above
-at the top of this file. However, as these hyperparameters are tuned in a 
+at the top of this file. However, as these hyperparameters are tuned in a
 manual way and don't have to scale, this is left hard-coded.
 
 @param mode Only can be 'reject'. Unused.
 @param dataset Either 'nyse-o' or 'sp500'
-@param hyperparameters allows to pass in ideal hyperparameters from 
+@param hyperparameters allows to pass in ideal hyperparameters from
 @param debug allwos for verbose and nonrandom results to be generated.
 """
 
