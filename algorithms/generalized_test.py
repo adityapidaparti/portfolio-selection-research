@@ -99,4 +99,5 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 	risk_limit_wealth[last_day,0], no_risk_wealth[last_day,0]]
 
 if __name__ == '__main__':
-	randomSampling(num_tests=2, debug=True, dataset='nyse-o')
+	randomSampling(num_tests=2, debug=True, dataset='nyse-o',
+	hyperparameters= constants.nyse_o_hyperparameters)
