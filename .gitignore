@@ -1,4 +1,5 @@
 *.pyc
 *.DS_Store
-*.ipnyb_checkpoints
+**/*.ipynb_checkpoints/
+**.ipnyb_checkpoints/**
 *.idea
