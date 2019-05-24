@@ -6,10 +6,14 @@ from datetime import datetime
 import sys
 import os
 import pathlib
+import multiprocessing 
+from functools import partial
+
 scriptPath = os.path.realpath(os.path.dirname(sys.argv[0]))
 os.chdir(scriptPath)
 sys.path.append("..")
 import constants
+
 """
 These are hyperameters to be set. Random samples will be taken form these
 values. Their default values are specified in constants.py.
@@ -99,4 +103,15 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 	risk_limit_wealth[last_day,0], no_risk_wealth[last_day,0]]
 
 if __name__ == '__main__':
-	randomSampling(num_tests=100, debug=False, dataset='sp500')
+	# randomSampling(num_tests=1, debug=False, dataset='sp500')
+	sp500_fnc = partial(randomSampling, num_tests=1, debug=False, dataset='sp500')
+	p1 = multiprocessing.Process(target=sp500_fnc)
+	p2 = multiprocessing.Process(target=sp500_fnc)
+
+	p1.start()
+	p2.start()
+
+	p1.join()
+	p2.join()
+
+
