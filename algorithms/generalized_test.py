@@ -110,14 +110,36 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 	return [beta_window, alpha, gamma, eta, max_risk, \
 	risk_limit_wealth[last_day,0], no_risk_wealth[last_day,0]]
 
-if __name__ == '__main__':
-	# randomSampling(num_tests=1, debug=False, dataset='sp500')
-	# sp500_fnc = partial(randomSampling, num_tests=1, debug=True, dataset='sp500')
-	proccesses = [multiprocessing.Process(target=partial(randomSampling, num_tests=1, debug=False, dataset='sp500')) for x in range(10)]
+def fine_grid_driver():
+	hp_s = {
+		'beta_ranges' : [21, 63, 126],
+		'alphas' : [0.5, 0.7, 0.9, 1.1, 1.3],
+		'gammas' : [0.0, 0.0025, 0.01],
+		'etas' : [0.04, 0.08, 0.1, 0.15, 0.2, 0.3],
+		'max_risk' : [0.5, 0.7, 0.9, 1, 1,2]
+	}
+	# nyse_func = partial(randomSampling, num_tests=1, debug=True, dataset='nyse-o', hyperparameters=hp_s)
+	proccesses = [multiprocessing.Process(
+			target=partial(
+				randomSampling, 
+				num_tests=1, 
+				debug=False,
+				dataset='nyse-o',
+				hyperparameters=hp_s)
+			) 
+			for x in range(20)]
 
 	for process in proccesses:
 		process.start()
 
 	for process in proccesses:
 		process.join()
+	
+	
+
+if __name__ == '__main__':
+	# randomSampling(num_tests=1, debug=False, dataset='sp500')
+	# sp500_fnc = partial(randomSampling, num_tests=1, debug=True, dataset='sp500')
+	# proccesses = [multiprocessing.Process(target=partial(randomSampling, num_tests=10, debug=False, dataset='sp500')) for x in range(10)]
+	fine_grid_driver()
 
