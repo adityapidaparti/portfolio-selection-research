@@ -47,7 +47,6 @@ def lazy_updates_admm(pricesData='../Data/nyse-o.csv',betasData='../Data/nyse-o_
     if debug:
         num_days = 5
     for day in range(1, num_days):
-        print(day)
         if (debug):
             print("Day %d, Wealth: %f, Risk: %f" % (day, wealth[day-1,0], portfolioBetas[day-1, 0]))
 

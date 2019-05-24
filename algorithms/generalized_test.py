@@ -57,10 +57,18 @@ def randomSampling(num_tests=100, mode='reject', dataset='nyse-o', \
 	results.columns = ['Beta Range', 'Alpha', 'Gamma', 'Eta', 'Max Risk', \
 	'Wealth', 'No Risk Wealth']
 
-	time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+	time = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
 	file_directory = "../rejection/" + dataset + "/compare_" + str(num_tests)
-	pathlib.Path(file_directory).mkdir(parents=True, exist_ok=True)
+
+	if debug:
+		file_directory += "-debug"
+
+	try:
+		pathlib.Path(file_directory).mkdir(parents=True)
+	except OSError:
+		pass
 	results.to_csv(file_directory + "/" + time + ".csv")
+	
 
 """
 Runs a single random test. Fairly coupled as the parameters are hardcoded above
@@ -104,14 +112,12 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 
 if __name__ == '__main__':
 	# randomSampling(num_tests=1, debug=False, dataset='sp500')
-	sp500_fnc = partial(randomSampling, num_tests=1, debug=False, dataset='sp500')
-	p1 = multiprocessing.Process(target=sp500_fnc)
-	p2 = multiprocessing.Process(target=sp500_fnc)
+	# sp500_fnc = partial(randomSampling, num_tests=1, debug=True, dataset='sp500')
+	proccesses = [multiprocessing.Process(target=partial(randomSampling, num_tests=1, debug=False, dataset='sp500')) for x in range(10)]
 
-	p1.start()
-	p2.start()
+	for process in proccesses:
+		process.start()
 
-	p1.join()
-	p2.join()
-
+	for process in proccesses:
+		process.join()
 
