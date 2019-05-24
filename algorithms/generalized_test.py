@@ -113,7 +113,7 @@ def singleRandomtest(mode, dataset, hyperparameters, debug):
 if __name__ == '__main__':
 	# randomSampling(num_tests=1, debug=False, dataset='sp500')
 	# sp500_fnc = partial(randomSampling, num_tests=1, debug=True, dataset='sp500')
-	proccesses = [multiprocessing.Process(target=partial(randomSampling, num_tests=1, debug=False, dataset='sp500')) for x in range(10)]
+	proccesses = [multiprocessing.Process(target=partial(randomSampling, num_tests=5, debug=False, dataset='sp500')) for x in range(32)]
 
 	for process in proccesses:
 		process.start()
