@@ -145,7 +145,7 @@ def fine_grid_driver_sp500():
 				debug=False,
 				dataset='sp500',)
 			) 
-			for x in range(50)]
+			for x in range(200)]
 
 	for process in proccesses:
 		process.start()
