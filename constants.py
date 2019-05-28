@@ -11,7 +11,7 @@ nyse_o_hyperparameters = {
 # Coarse Hyperparameters for sp500 dataset
 sp500_hyperparameters = {
 	'beta_ranges' : [21, 42, 63, 126, 252],
-	'alphas' : [x/10. for x in range(0,4)],
+	'alphas' : [x/10. for x in range(0,40)],
 	'gammas' : [0.0, 0.001, 0.0025, 0.005, 0.01],
 	'etas' : [x/1. for x in range(8,32)],
 	'max_risk' : [x/20. for x in range(10,30)]}
