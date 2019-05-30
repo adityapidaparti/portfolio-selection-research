@@ -138,12 +138,20 @@ def fine_grid_driver_nyse():
 
 
 def fine_grid_driver_sp500():
+	hp_s = {
+		'beta_ranges' : [21, 63, 126],
+		'alphas' : [1.2, 1.8, 2.4, 3.0, 3.6],
+		'gammas' : [0.0, 0.0025, 0.01],
+		'etas' : [8, 12, 16, 20, 24, 28],
+		'max_risk' : [0.5, 0.7, 0.9, 1, 1,2]
+	}
 	proccesses = [multiprocessing.Process(
 			target=partial(
 				randomSampling, 
 				num_tests=1, 
 				debug=False,
-				dataset='sp500',)
+				dataset='sp500',
+				hyperparameters=hp_s,)
 			) 
 			for x in range(50)]
 
