@@ -148,7 +148,7 @@ def fine_grid_driver_sp500():
 	proccesses = [multiprocessing.Process(
 			target=partial(
 				randomSampling, 
-				num_tests=1, 
+				num_tests=5, 
 				debug=False,
 				dataset='sp500',
 				hyperparameters=hp_s,)
